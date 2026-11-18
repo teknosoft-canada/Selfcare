@@ -11,26 +11,6 @@
     {{ __('auth.login.login') }}
 @endsection
 @section('content')
-
-
-    {{--    <ul class="nav nav-pills" style="justify-content: flex-end; cursor: pointer"> --}}
-    {{--        <li class="nav-item dropdown"> --}}
-    {{--            <a class="btn btn-primary w-150px mb-5 indicator m-3" --}}
-    {{--               data-bs-toggle="dropdown" href="javascript:void(0)" role="button" --}}
-    {{--               aria-expanded="false">{{ getCurrentLanguageName() }}</a> --}}
-    {{--            <ul class="dropdown-menu w-150px"> --}}
-    {{--                @foreach (getLanguages() as $key => $value) --}}
-    {{--                    <li class="{{(checkLanguageSession() == $key) ? 'active' : '' }}"><a --}}
-    {{--                                class="dropdown-item  px-5 language-select {{(checkLanguageSession() == $key) ? 'bg-primary text-white' : 'text-dark' }}" --}}
-    {{--                                data-id="{{$key}}">{{$value}}</a> --}}
-    {{--                    </li> --}}
-    {{--                @endforeach --}}
-    {{--            </ul> --}}
-    {{--        </li> --}}
-    {{--    </ul> --}}
-</li>
-    </ul>
-
     <div class="auth-shell">
         <a href="{{ route('landing-home') }}" class="image auth-logo">
             <img alt="Self Care" src="{{ asset($settingValue['app_logo']['value']) }}" class="img-fluid logo-fix-size">

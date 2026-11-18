@@ -82,6 +82,7 @@
     <link rel="stylesheet" href="{{ mix('css/front-third-party.css') }}">
     <link rel="stylesheet" href="{{ mix('css/front-pages.css') }}">
     <link rel="stylesheet" href="{{ asset('css/selfcare-brand.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/magicui-public.css') }}">
     <link rel="manifest" href="{{ asset('site.webmanifest') }}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.css"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
@@ -127,7 +128,7 @@
     @yield('page_scripts')
     @yield('scripts')
 </head>
-<body>
+<body class="magicui-site">
 {{--@include('web.layouts.web_loader')--}}
 @include('web.layouts.header')
 @yield('content')
@@ -142,6 +143,7 @@
     {{Form::hidden('userCurrentLanguage',checkLanguageSession(),['class'=>'userCurrentLanguage'])}}
 </div>
 <!-- End Go Top Area -->
-
+<script src="https://unpkg.com/lucide@0.544.0/dist/umd/lucide.min.js"></script>
+<script src="{{ asset('js/lucide-icons.js') }}"></script>
 </body>
 </html>

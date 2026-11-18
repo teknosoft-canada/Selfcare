@@ -1,4 +1,4 @@
-<header class="position-relative bg-light">
+<header class="mu-nav">
     <div class="container">
         <div class="row align-items-center">
             <div class="col-lg-3 col-sm-5 col-6">

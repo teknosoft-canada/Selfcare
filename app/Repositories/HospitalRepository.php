@@ -3,6 +3,7 @@
 namespace App\Repositories;
 
 use App\Models\Appointment;
+use App\Support\HospitalDomain;
 use App\Models\Department;
 use App\Models\Doctor;
 use App\Models\DoctorDepartment;
@@ -139,6 +140,7 @@ class HospitalRepository extends BaseRepository
             Subscription::create($subscription);
 
             DB::commit();
+            HospitalDomain::forget($input['username']);
 
         } catch (Exception $e) {
             DB::rollBack();

@@ -46,6 +46,27 @@
         </section>
         <!-- end banner section -->
 
+        <section class="hospital-directory" id="registered-hospitals">
+            <div class="container">
+                <h2>{{ __('messages.hospitals') }}</h2>
+                @if($registeredHospitals->isEmpty())
+                    <p class="hospital-directory-empty">{{ __('messages.common.no_matching_records_found') }}</p>
+                @else
+                    <div class="row g-3">
+                        @foreach($registeredHospitals as $hospital)
+                            <div class="col-md-6 col-lg-4">
+                                <a class="hospital-directory-card" data-turbo="false"
+                                   href="{{ \App\Support\HospitalDomain::url($hospital->username) }}">
+                                    <span class="hospital-directory-name">{{ $hospital->hospital_name }}</span>
+                                    <span class="hospital-directory-host">{{ strtolower($hospital->username) }}.{{ config('hospitals.base_domain') }}</span>
+                                </a>
+                            </div>
+                        @endforeach
+                    </div>
+                @endif
+            </div>
+        </section>
+
         <!-- start protect-health section -->
         <section class="health-section pt-100">
             <div class="container">

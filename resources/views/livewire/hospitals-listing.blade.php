@@ -78,7 +78,8 @@
                                 <div class="row d-flex justify-content-between">
                                     <div class="col-xl-8 col-12">
                                         <p>
-                                            <h4><a href="#"
+                                            <h4><a href="{{ route('front', $hospital->username) }}"
+                                                data-turbo="false"
                                                 class="text-secondary text-decoration-none fs-5">{{ $hospital->hospital_name }}</a>
                                             </h4>
                                         </p>

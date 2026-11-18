@@ -16,13 +16,15 @@
     <link href="{{ mix('assets/css/third-party.css') }}" rel="stylesheet" type="text/css" />
     @yield('css')
     <link rel="stylesheet" href="{{ asset('css/selfcare-brand.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/magicui-public.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/selfcare-auth.css') }}">
     <link rel="manifest" href="{{ asset('site.webmanifest') }}">
 </head>
 <?php
 $style = 'style=';
 ?>
 
-<body class="auth-page">
+<body class="auth-page magicui-site">
     <div class="d-flex flex-column flex-root">
         @yield('content')
     </div>
@@ -54,6 +56,8 @@ $style = 'style=';
         })
 
     </script>
+    <script src="https://unpkg.com/lucide@0.544.0/dist/umd/lucide.min.js"></script>
+    <script src="{{ asset('js/lucide-icons.js') }}"></script>
 </body>
 
 </html>

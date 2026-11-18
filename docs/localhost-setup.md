@@ -115,7 +115,7 @@ Using a virtual host (XAMPP, WAMP, Laravel Herd, or Valet):
 
 ## 8. Sign in and brand the install
 
-The SQL dump creates the original InfyHMS demo accounts so you can reach the panel on a fresh install. Treat them as temporary:
+The SQL dump creates the Self Care starter accounts so you can reach the panel on a fresh install. Treat them as temporary:
 
 1. Sign in, then immediately change the demo password or create your own super admin user.
 2. Open Super Admin → Settings and set:

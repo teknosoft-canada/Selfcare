@@ -1,0 +1,353 @@
+/* Every dashboard page shares layouts/app.blade.php.
+   These rules restyle that shell to Board UI tokens:
+   neutral canvas, white cards, hairline borders, blue accent. */
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&display=swap");
+
+body.boardui-app {
+    --b-canvas: #f7f7f7;
+    --b-surface: #ffffff;
+    --b-ink: #171717;
+    --b-muted: #737373;
+    --b-line: #ebebeb;
+    --b-line-strong: #ebeff5;
+    --b-accent: #3392ff;
+    --b-accent-soft: #e8f3ff;
+    --b-danger: #dc2626;
+    font-family: "Source Sans 3", ui-sans-serif, system-ui, sans-serif;
+    background: var(--b-canvas);
+    color: var(--b-ink);
+}
+
+body.boardui-app ::selection {
+    background: #d6e9ff;
+    color: #10243d;
+}
+
+body.boardui-app :focus-visible {
+    outline: 2px solid var(--b-accent);
+    outline-offset: 2px;
+}
+
+body.boardui-app .aside-menu-container {
+    background: var(--b-surface) !important;
+    border-right: 1px solid var(--b-line) !important;
+}
+
+body.boardui-app .aside-menu-container__aside-logo {
+    border-bottom: 1px solid var(--b-line);
+    background: var(--b-surface);
+}
+
+body.boardui-app .navbar-brand-name,
+body.boardui-app .aside-menu-container .nav-link,
+body.boardui-app .aside-menu-container a {
+    color: var(--b-ink) !important;
+    font-size: 13.5px;
+    font-weight: 600;
+}
+
+body.boardui-app .aside-menu-container__aside-menu .nav-link {
+    border: 0 !important;
+    border-radius: 8px;
+    margin: 2px 10px;
+    box-shadow: none !important;
+}
+
+body.boardui-app .aside-menu-container__aside-menu .nav-link.active,
+body.boardui-app .aside-menu-container__aside-menu .nav-link:hover,
+body.boardui-app .aside-menu-container .nav-item.active > a {
+    background: var(--b-accent-soft) !important;
+    color: #0b63ce !important;
+    border-left: 0 !important;
+}
+
+body.boardui-app .aside-menu-container__aside-menu .nav-item::before,
+body.boardui-app .aside-menu-container .active::before,
+body.boardui-app .aside-menu-container .nav-link::before {
+    display: none !important;
+    content: none !important;
+}
+
+body.boardui-app .aside-menu-container__aside-search .form-control,
+body.boardui-app header .form-control,
+body.boardui-app .content .form-control,
+body.boardui-app .content .form-select,
+body.boardui-app .content textarea,
+body.boardui-app .modal .form-control,
+body.boardui-app .modal .form-select {
+    border-radius: 8px;
+    border: 1px solid var(--b-line);
+    background: var(--b-surface);
+    color: var(--b-ink);
+    min-height: 38px;
+    box-shadow: none;
+}
+
+body.boardui-app .form-control:focus,
+body.boardui-app .form-select:focus {
+    border-color: var(--b-accent);
+    box-shadow: 0 0 0 3px rgba(51, 146, 255, 0.18);
+}
+
+body.boardui-app .wrapper,
+body.boardui-app .content,
+body.boardui-app header.header,
+body.boardui-app .top-navbar {
+    background: var(--b-canvas) !important;
+}
+
+body.boardui-app header.header {
+    border-bottom: 1px solid var(--b-line);
+    min-height: 64px;
+}
+
+body.boardui-app .content {
+    padding-bottom: 2rem;
+}
+
+body.boardui-app .content h1,
+body.boardui-app .toolbar-title,
+body.boardui-app .page-title {
+    font-size: 1.35rem;
+    letter-spacing: -0.03em;
+    color: var(--b-ink);
+    font-weight: 700;
+}
+
+body.boardui-app .widget > a > div,
+body.boardui-app .card,
+body.boardui-app .modal-content,
+body.boardui-app .dropdown-menu {
+    background: var(--b-surface) !important;
+    border: 1px solid var(--b-line) !important;
+    border-radius: 12px !important;
+    box-shadow: 0 1px 2px rgba(23, 23, 23, 0.04) !important;
+    color: var(--b-ink);
+}
+
+body.boardui-app .widget > a > div {
+    align-items: flex-start !important;
+    flex-direction: column;
+    gap: 0.75rem;
+    min-height: 124px;
+}
+
+body.boardui-app .widget h2,
+body.boardui-app .widget h3,
+body.boardui-app .widget .text-white,
+body.boardui-app .widget .text-primary,
+body.boardui-app .widget .text-dark,
+body.boardui-app .card,
+body.boardui-app .card .text-dark,
+body.boardui-app .table {
+    color: var(--b-ink) !important;
+}
+
+body.boardui-app .widget h2 {
+    font-size: 1.6rem !important;
+    font-variant-numeric: tabular-nums;
+    letter-spacing: -0.03em;
+    margin: 0;
+    text-align: left;
+}
+
+body.boardui-app .widget h3,
+body.boardui-app .text-muted,
+body.boardui-app .text-gray-600,
+body.boardui-app .form-label {
+    color: var(--b-muted) !important;
+    font-weight: 600;
+}
+
+body.boardui-app .widget .text-end {
+    text-align: left !important;
+    width: 100%;
+}
+
+body.boardui-app .widget-icon {
+    width: 36px;
+    height: 36px;
+    background: var(--b-accent-soft) !important;
+    border-radius: 8px !important;
+}
+
+body.boardui-app .widget-icon i,
+body.boardui-app .widget-icon span,
+body.boardui-app .widget-icon svg {
+    color: #0b63ce !important;
+}
+
+body.boardui-app .card-header,
+body.boardui-app .modal-header,
+body.boardui-app .modal-footer {
+    background: transparent;
+    border-color: var(--b-line);
+}
+
+body.boardui-app .btn {
+    border-radius: 8px;
+    font-weight: 700;
+    box-shadow: none;
+}
+
+body.boardui-app .btn-primary,
+body.boardui-app .btn-success {
+    background: var(--b-accent) !important;
+    border-color: var(--b-accent) !important;
+    color: #fff !important;
+}
+
+body.boardui-app .btn-primary:hover,
+body.boardui-app .btn-success:hover {
+    background: #1a7af0 !important;
+    border-color: #1a7af0 !important;
+}
+
+body.boardui-app .btn-secondary,
+body.boardui-app .btn-light,
+body.boardui-app .btn-outline-primary {
+    background: var(--b-surface) !important;
+    color: var(--b-ink) !important;
+    border: 1px solid var(--b-line) !important;
+}
+
+body.boardui-app .btn-danger {
+    background: var(--b-danger) !important;
+    border-color: var(--b-danger) !important;
+}
+
+body.boardui-app .table {
+    font-size: 13.5px;
+    font-variant-numeric: tabular-nums;
+    border-color: var(--b-line);
+}
+
+body.boardui-app .table thead th {
+    background: #fafafa;
+    color: var(--b-muted);
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    border-bottom: 1px solid var(--b-line) !important;
+    white-space: nowrap;
+}
+
+body.boardui-app .table td,
+body.boardui-app .table th {
+    border-color: var(--b-line) !important;
+    vertical-align: middle;
+}
+
+body.boardui-app .table-striped > tbody > tr:nth-of-type(odd) > * {
+    background: #fcfcfc;
+}
+
+body.boardui-app .dataTables_wrapper .dataTables_filter input,
+body.boardui-app .dataTables_wrapper .dataTables_length select {
+    border: 1px solid var(--b-line);
+    border-radius: 8px;
+    min-height: 36px;
+    padding: 0.25rem 0.6rem;
+}
+
+body.boardui-app .page-link {
+    color: var(--b-ink);
+    border-color: var(--b-line);
+    border-radius: 8px;
+    margin: 0 2px;
+}
+
+body.boardui-app .page-item.active .page-link {
+    background: var(--b-accent);
+    border-color: var(--b-accent);
+    color: #fff;
+}
+
+body.boardui-app .badge {
+    border-radius: 999px;
+    font-weight: 700;
+}
+
+body.boardui-app .alert {
+    border-radius: 12px;
+    border: 1px solid var(--b-line);
+}
+
+body.boardui-app .nav-tabs {
+    border-bottom: 1px solid var(--b-line);
+    gap: 0.25rem;
+}
+
+body.boardui-app .nav-tabs .nav-link {
+    border: 0;
+    border-radius: 8px 8px 0 0;
+    color: var(--b-muted);
+    font-weight: 700;
+}
+
+body.boardui-app .nav-tabs .nav-link.active {
+    color: #0b63ce;
+    background: var(--b-surface);
+    box-shadow: inset 0 -2px 0 var(--b-accent);
+}
+
+body.boardui-app .breadcrumb {
+    background: transparent;
+    margin-bottom: 0.75rem;
+}
+
+body.boardui-app .widget-icon svg,
+body.boardui-app .widget-icon .svg-inline--fa {
+    width: 18px !important;
+    height: 18px !important;
+}
+
+/* Livewire tables use Tailwind dark: classes. Keep every list page light. */
+body.boardui-app thead,
+body.boardui-app thead th,
+body.boardui-app thead td {
+    background-color: #fafafa !important;
+    color: #737373 !important;
+}
+
+body.boardui-app tbody,
+body.boardui-app tbody td,
+body.boardui-app tbody th,
+body.boardui-app tfoot,
+body.boardui-app tfoot td {
+    background-color: #ffffff !important;
+    color: #171717 !important;
+}
+
+body.boardui-app tbody tr:hover td {
+    background-color: #f7f7f7 !important;
+}
+
+@media (prefers-color-scheme: dark) {
+    body.boardui-app .dark\:bg-gray-800,
+    body.boardui-app .dark\:bg-gray-700,
+    body.boardui-app .dark\:bg-gray-900,
+    body.boardui-app .dark\:bg-gray-600 {
+        background-color: #ffffff !important;
+        color: #171717 !important;
+    }
+
+    body.boardui-app thead.dark\:bg-gray-800,
+    body.boardui-app thead .dark\:bg-gray-800 {
+        background-color: #fafafa !important;
+        color: #737373 !important;
+    }
+
+    body.boardui-app .dark\:text-white,
+    body.boardui-app .dark\:text-gray-400,
+    body.boardui-app .dark\:text-gray-300 {
+        color: #171717 !important;
+    }
+}
+
+body.boardui-app .aside-menu-icon svg.lucide,
+body.boardui-app header svg.lucide {
+    width: 18px;
+    height: 18px;
+    stroke: currentColor;
+}

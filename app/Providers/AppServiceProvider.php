@@ -4,6 +4,7 @@ namespace App\Providers;
 
 use App\Models\Module;
 use App\Models\Setting;
+use App\Routing\HospitalUrlGenerator;
 use App\Observers\ModuleObserver;
 use App\Observers\SettingObserver;
 use App\Rules\UniqueRecordRule;
@@ -26,6 +27,22 @@ class AppServiceProvider extends ServiceProvider
     public function register(): void
     {
         Cashier::ignoreMigrations();
+
+        $this->app->extend('url', function ($url, $app) {
+            $generator = new HospitalUrlGenerator(
+                $app['router']->getRoutes(),
+                $url->getRequest(),
+                $app['config']['app.asset_url']
+            );
+            $generator->setSessionResolver(function () use ($app) {
+                return $app->bound('session') ? $app['session'] : null;
+            });
+            $generator->setKeyResolver(function () use ($app) {
+                return $app['config']->get('app.key');
+            });
+
+            return $generator;
+        });
     }
 
     /**

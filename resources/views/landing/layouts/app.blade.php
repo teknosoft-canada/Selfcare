@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="{{ mix('css/landing-third-party.css') }}">
     <link rel="stylesheet" href="{{ mix('css/landing-pages.css') }}">
     <link rel="stylesheet" href="{{ asset('css/selfcare-brand.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/magicui-public.css') }}">
     <link rel="manifest" href="{{ asset('site.webmanifest') }}">
     {{--    <link rel="stylesheet" href="{{ asset('assets/css/all.min.css') }}"> --}}
     {{--    <link href="{{asset('landing_front/css/swiper-bundle.min.css')}}" rel="stylesheet" type="text/css"> --}}
@@ -97,7 +98,7 @@
     </script>
 </head>
 
-<body>
+<body class="magicui-site">
 
     {{-- <div class="page-wrapper"> --}}
     {{--    <div id="ht-preloader"> --}}
@@ -148,6 +149,8 @@
     {{-- <script src="https://js.stripe.com/v3/"></script> --}}
     @yield('page_scripts')
     @yield('scripts')
+    <script src="https://unpkg.com/lucide@0.544.0/dist/umd/lucide.min.js"></script>
+    <script src="{{ asset('js/lucide-icons.js') }}"></script>
 </body>
 
 </html>

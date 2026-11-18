@@ -3414,7 +3414,7 @@ CREATE TABLE `settings` (
 INSERT INTO `settings` (`id`, `key`, `value`, `tenant_id`, `created_at`, `updated_at`) VALUES
 (1, 'app_name', 'HMS', NULL, '2022-12-01 01:07:28', '2022-12-01 01:07:28'),
 (2, 'app_logo', 'web/img/hms-saas-logo.png', NULL, '2022-12-01 01:07:28', '2022-12-01 01:07:28'),
-(3, 'company_name', 'InfyOmLabs', NULL, '2022-12-01 01:07:28', '2022-12-01 01:07:28'),
+(3, 'company_name', 'Self Care', NULL, '2022-12-01 01:07:28', '2022-12-01 01:07:28'),
 (4, 'current_currency', 'inr', NULL, '2022-12-01 01:07:28', '2022-12-01 01:07:28'),
 (5, 'hospital_address', '16/A saint Joseph Park', NULL, '2022-12-01 01:07:28', '2022-12-01 01:07:28'),
 (6, 'hospital_email', 'cityhospital@gmail.com', NULL, '2022-12-01 01:07:28', '2022-12-01 01:07:28'),
@@ -3430,7 +3430,7 @@ INSERT INTO `settings` (`id`, `key`, `value`, `tenant_id`, `created_at`, `update
 (16, 'enable_google_recaptcha', '0', NULL, '2022-12-01 01:07:29', '2022-12-01 01:07:29'),
 (17, 'app_name', 'HMS', '62ed9944-45a5-4293-9553-6639a0b641f6', '2022-12-01 01:07:39', '2022-12-01 01:07:39'),
 (18, 'app_logo', 'web/img/hms-saas-logo.png', '62ed9944-45a5-4293-9553-6639a0b641f6', '2022-12-01 01:07:39', '2022-12-01 01:07:39'),
-(19, 'company_name', 'InfyOmLabs', '62ed9944-45a5-4293-9553-6639a0b641f6', '2022-12-01 01:07:39', '2022-12-01 01:07:39'),
+(19, 'company_name', 'Self Care', '62ed9944-45a5-4293-9553-6639a0b641f6', '2022-12-01 01:07:39', '2022-12-01 01:07:39'),
 (20, 'current_currency', 'inr', '62ed9944-45a5-4293-9553-6639a0b641f6', '2022-12-01 01:07:39', '2022-12-01 01:07:39'),
 (21, 'hospital_address', '16/A saint Joseph Park', '62ed9944-45a5-4293-9553-6639a0b641f6', '2022-12-01 01:07:39', '2022-12-01 01:07:39'),
 (22, 'hospital_email', 'cityhospital@gmail.com', '62ed9944-45a5-4293-9553-6639a0b641f6', '2022-12-01 01:07:39', '2022-12-01 01:07:39'),
@@ -3446,7 +3446,7 @@ INSERT INTO `settings` (`id`, `key`, `value`, `tenant_id`, `created_at`, `update
 (32, 'enable_google_recaptcha', '0', '62ed9944-45a5-4293-9553-6639a0b641f6', '2022-12-01 01:07:39', '2022-12-01 01:07:39'),
 (33, 'app_name', 'HMS', '567fe293-805a-4b18-bfae-7ff2bb85f416', '2022-12-01 01:07:47', '2022-12-01 01:07:47'),
 (34, 'app_logo', 'web/img/hms-saas-logo.png', '567fe293-805a-4b18-bfae-7ff2bb85f416', '2022-12-01 01:07:47', '2022-12-01 01:07:47'),
-(35, 'company_name', 'InfyOmLabs', '567fe293-805a-4b18-bfae-7ff2bb85f416', '2022-12-01 01:07:47', '2022-12-01 01:07:47'),
+(35, 'company_name', 'Self Care', '567fe293-805a-4b18-bfae-7ff2bb85f416', '2022-12-01 01:07:47', '2022-12-01 01:07:47'),
 (36, 'current_currency', 'inr', '567fe293-805a-4b18-bfae-7ff2bb85f416', '2022-12-01 01:07:47', '2022-12-01 01:07:47'),
 (37, 'hospital_address', '16/A saint Joseph Park', '567fe293-805a-4b18-bfae-7ff2bb85f416', '2022-12-01 01:07:47', '2022-12-01 01:07:47'),
 (38, 'hospital_email', 'cityhospital@gmail.com', '567fe293-805a-4b18-bfae-7ff2bb85f416', '2022-12-01 01:07:47', '2022-12-01 01:07:47'),
@@ -3618,7 +3618,7 @@ CREATE TABLE `super_admin_settings` (
 
 INSERT INTO `super_admin_settings` (`id`, `key`, `value`, `created_at`, `updated_at`) VALUES
 (1, 'default_country_code', 'in', '2022-12-01 01:07:18', '2022-12-01 01:07:18'),
-(2, 'app_name', 'InfyHMS', '2022-12-01 01:07:28', '2022-12-01 01:07:28'),
+(2, 'app_name', 'Self Care', '2022-12-01 01:07:28', '2022-12-01 01:07:28'),
 (3, 'app_logo', 'web/img/hms-saas-logo.png', '2022-12-01 01:07:28', '2022-12-01 01:07:28'),
 (4, 'favicon', 'web/img/hms-saas-favicon.ico', '2022-12-01 01:07:28', '2022-12-01 01:07:28'),
 (5, 'footer_text', 'Over past 10+ years of experience and skills in various technologies, we built great scalable products. Whatever technology we worked with, we just not build products for our clients but we a', '2022-12-01 01:07:29', '2022-12-01 01:07:29'),

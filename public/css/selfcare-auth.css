@@ -1,0 +1,106 @@
+/* Sign-in and registration, matched to the public site. */
+body.auth-page {
+    min-height: 100vh;
+    background:
+        radial-gradient(700px 320px at 50% -10%, rgba(15, 110, 107, 0.12), transparent 60%),
+        #f6f4ef;
+}
+
+body.auth-page .d-flex.flex-root,
+body.auth-page .flex-root {
+    min-height: 100vh;
+}
+
+body.auth-page .auth-shell {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 2rem 1rem;
+}
+
+body.auth-page .auth-logo img,
+body.auth-page .logo-fix-size {
+    max-height: 46px;
+    width: auto;
+}
+
+body.auth-page .auth-card,
+body.auth-page .width-540 {
+    width: min(100%, 440px) !important;
+    max-width: 440px;
+    margin: 0 auto;
+    background: #fff !important;
+    border: 1px solid #e4dfd6 !important;
+    border-radius: 20px !important;
+    box-shadow: 0 16px 36px rgba(28, 25, 21, 0.08) !important;
+    padding: 1.5rem 1.35rem 1.35rem !important;
+}
+
+body.auth-page .auth-card-toolbar {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 0.5rem;
+}
+
+body.auth-page .auth-card h1 {
+    font-family: Outfit, "Source Sans 3", sans-serif;
+    font-size: 1.85rem;
+    letter-spacing: -0.04em;
+    text-align: left !important;
+    margin: 0 0 1.1rem !important;
+    color: #1c1915;
+}
+
+body.auth-page .form-label {
+    font-weight: 600;
+    color: #3f3a33;
+}
+
+body.auth-page .form-control {
+    min-height: 46px;
+    border-radius: 12px;
+    border: 1px solid #e4dfd6;
+    background: #fff;
+    color: #1c1915;
+}
+
+body.auth-page .form-control:focus {
+    border-color: #0f6e6b;
+    box-shadow: 0 0 0 3px rgba(15, 110, 107, 0.15);
+}
+
+body.auth-page .btn-primary {
+    background: #14312e;
+    border-color: #14312e;
+    color: #f6f4ef;
+    border-radius: 999px;
+    min-height: 46px;
+    font-weight: 700;
+}
+
+body.auth-page .btn-primary:hover {
+    background: #0f6e6b;
+    border-color: #0f6e6b;
+}
+
+body.auth-page .auth-card-toolbar .btn,
+body.auth-page .language-option .btn {
+    background: transparent;
+    color: #14312e;
+    border: 1px solid #e4dfd6;
+    border-radius: 999px;
+    min-height: 36px;
+    padding: 0.25rem 0.8rem;
+}
+
+body.auth-page .link-info,
+body.auth-page a {
+    color: #0f6e6b;
+}
+
+body.auth-page .alert {
+    border-radius: 12px;
+}

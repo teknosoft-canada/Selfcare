@@ -14,12 +14,12 @@
                 <div class="row align-items-center flex-column-reverse flex-lg-row">
                     <div class="col-lg-6 text-lg-start text-center">
                         <div class="hero-content mt-5 mt-lg-0">
-                            <h6 class="text-primary mb-3">{{ $frontSetting['home_page_experience'] }} {{ __('messages.web_home.years_experience') }}</h6>
                             <h1 class="mb-3 pb-1">
-                                {{ \Illuminate\Support\Str::limit($frontSetting['home_page_title'], 42) }}
+                                {{ \Illuminate\Support\Str::limit($frontSetting['home_page_title'], 80) }}
                             </h1>
                             <p class="mb-lg-4 pb-lg-3 mb-4">
-                                {{ \Illuminate\Support\Str::limit($frontSetting['home_page_description'], 170) }}</p>
+                                {{ $frontSetting['home_page_experience'] }} {{ __('messages.web_home.years_experience') }}.
+                                {{ \Illuminate\Support\Str::limit($frontSetting['home_page_description'], 220) }}</p>
                             @if(!Auth::user())
                                 <a href="{{ route('register') }}"
                                    class="btn btn-primary">{{ __('messages.web_home.sign_up') }}</a>

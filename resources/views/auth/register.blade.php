@@ -13,10 +13,6 @@ App::setLocale(session('languageName'));
    {{-- <link rel="stylesheet" href="{{ asset('node_modules/intl-tel-input/build/css/intlTelInput.css') }}"> --}}
 @endsection
 @section('content')
-    <!--begin::Authentication - Sign-up -->
-</li>
-    </ul>
-
     <div class="auth-shell">
         <a href="{{ route('landing-home') }}" data-turbo="false" class="image auth-logo">
             <img alt="Self Care" src="{{ asset($settingValue['app_logo']['value']) }}" class="img-fluid logo-fix-size">

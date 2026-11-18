@@ -73,6 +73,14 @@ class LandingScreenController extends AppBaseController
             ->where('department_id', '=', User::USER_ADMIN)
             ->whereNotNull('hospital_name')->paginate(9, '*', 'hospitals');
 
+        $data['registeredHospitals'] = User::query()
+            ->where('department_id', '=', User::USER_ADMIN)
+            ->whereNotNull('username')
+            ->where('username', '!=', '')
+            ->whereNotNull('hospital_name')
+            ->orderBy('hospital_name')
+            ->get(['id', 'hospital_name', 'username', 'city']);
+
         return view('landing.home.index')->with($data);
     }
 

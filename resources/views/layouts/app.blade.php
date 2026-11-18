@@ -35,6 +35,7 @@
         <link href="{{ mix('assets/css/style.css') }}" rel="stylesheet" type="text/css" />
         <link href="{{ mix('assets/css/plugins.css') }}" rel="stylesheet" type="text/css" />
     @endif
+    <link rel="stylesheet" href="{{ asset('css/boardui-dashboard.css') }}">
 
        @livewireStyles
     {{--    <script src="{{ asset('livewire/livewire.css') }}"></script> --}}
@@ -148,7 +149,7 @@
 $style = 'style=';
 ?>
 
-<body>
+<body class="boardui-app">
     {{-- <div class="d-flex flex-column flex-root"> --}}
     {{--    <div class="page d-flex flex-row flex-column-fluid"> --}}
     @include('user_profile.edit_profile_modal')
@@ -198,6 +199,8 @@ $style = 'style=';
     {{ Form::hidden('hasBeenDeletedVariable', __('messages.common.has_been_deleted'), ['class' => 'hasBeenDeletedVariable']) }}
     {{ Form::hidden('okVariable', __('messages.common.ok'), ['class' => 'okVariable']) }}
 
+    <script src="https://unpkg.com/lucide@0.544.0/dist/umd/lucide.min.js"></script>
+    <script src="{{ asset('js/lucide-icons.js') }}"></script>
 
 </body>
 

@@ -11,6 +11,7 @@ use App\Http\Middleware\CheckSuperAdminRole;
 use App\Http\Middleware\CheckUserStatus;
 use App\Http\Middleware\EncryptCookies;
 use App\Http\Middleware\LanguageChangeMiddleware;
+use App\Http\Middleware\MapHospitalSubdomain;
 use App\Http\Middleware\MultiTenantMiddleware;
 use App\Http\Middleware\PreventRequestsDuringMaintenance;
 use App\Http\Middleware\RedirectIfAuthenticated;
@@ -50,6 +51,7 @@ class Kernel extends HttpKernel
      */
     protected $middleware = [
         TrustProxies::class,
+        MapHospitalSubdomain::class,
         PreventRequestsDuringMaintenance::class,
         ValidatePostSize::class,
         TrimStrings::class,

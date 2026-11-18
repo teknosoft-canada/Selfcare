@@ -1,0 +1,239 @@
+/* Main site and hospital sites, laid out in the Magic UI manner:
+   large type, sticky navigation, framed photography, quiet paper. */
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700&family=Source+Sans+3:wght@400;600;700&display=swap");
+
+body.magicui-site {
+    font-family: "Source Sans 3", ui-sans-serif, system-ui, sans-serif;
+    background: #f6f4ef;
+    color: #1c1915;
+    letter-spacing: -0.011em;
+}
+
+body.magicui-site ::selection {
+    background: #d8efe9;
+    color: #14312e;
+}
+
+body.magicui-site :focus-visible {
+    outline: 2px solid #0f6e6b;
+    outline-offset: 3px;
+}
+
+body.magicui-site h1,
+body.magicui-site h2,
+body.magicui-site h3 {
+    font-family: Outfit, "Source Sans 3", sans-serif;
+    letter-spacing: -0.04em;
+    text-wrap: balance;
+}
+
+body.magicui-site header,
+body.magicui-site .mu-nav {
+    position: sticky;
+    top: 0;
+    z-index: 40;
+    background: rgba(246, 244, 239, 0.9);
+    backdrop-filter: blur(14px);
+    border-bottom: 1px solid #e4dfd6;
+}
+
+body.magicui-site header .container > .row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    margin: 0;
+}
+
+body.magicui-site header .col-lg-3,
+body.magicui-site header .col-lg-9,
+body.magicui-site header .col-sm-5,
+body.magicui-site header .col-sm-7,
+body.magicui-site header .col-6 {
+    width: auto;
+    max-width: none;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+body.magicui-site header .col-lg-9,
+body.magicui-site header .col-sm-7 {
+    flex: 1 1 auto;
+    display: flex;
+    justify-content: flex-end;
+}
+
+body.magicui-site header .navbar-nav {
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    row-gap: 0.25rem;
+    gap: 0.1rem;
+}
+
+body.magicui-site header .header-logo img,
+body.magicui-site header #logo-img {
+    max-height: 42px;
+    width: auto;
+}
+
+body.magicui-site header .nav-link {
+    font-weight: 600;
+    color: #3f3a33;
+    border-radius: 999px;
+    padding: 0.4rem 0.75rem;
+}
+
+body.magicui-site header .nav-link.active,
+body.magicui-site header .nav-link:hover {
+    color: #14312e;
+    background: #e7f3f1;
+}
+
+body.magicui-site .banner-section,
+body.magicui-site .hero-section {
+    background: transparent !important;
+    padding: 4.5rem 0 2.5rem !important;
+    border-radius: 0 !important;
+}
+
+body.magicui-site .banner-section h1,
+body.magicui-site .hero-section h1 {
+    font-size: clamp(2.5rem, 5vw, 4.4rem);
+    line-height: 0.98;
+    max-width: 14ch;
+    margin-inline: auto;
+}
+
+@media (min-width: 992px) {
+    body.magicui-site .banner-section h1,
+    body.magicui-site .hero-section h1 {
+        margin-inline: 0;
+    }
+}
+
+body.magicui-site .banner-section p,
+body.magicui-site .hero-section p {
+    max-width: 42rem;
+    font-size: 1.125rem;
+    line-height: 1.55;
+    color: #3f3a33;
+}
+
+body.magicui-site .banner-section img,
+body.magicui-site .hero-section img,
+body.magicui-site .sass-left-content img {
+    width: min(100%, 560px);
+    border-radius: 28px;
+    border: 1px solid #e4dfd6;
+    box-shadow: 0 16px 36px rgba(28, 25, 21, 0.12);
+    background: #fff;
+}
+
+body.magicui-site .btn,
+body.magicui-site .default-btn {
+    border-radius: 999px;
+    font-weight: 700;
+    padding: 0.7rem 1.15rem;
+}
+
+body.magicui-site .btn-primary,
+body.magicui-site .btn-success,
+body.magicui-site .default-btn {
+    background: #14312e;
+    border-color: #14312e;
+    color: #f6f4ef;
+    box-shadow: 0 10px 20px rgba(20, 49, 46, 0.16);
+}
+
+body.magicui-site .btn-primary:hover,
+body.magicui-site .btn-success:hover,
+body.magicui-site .default-btn:hover {
+    background: #0f6e6b;
+    border-color: #0f6e6b;
+    color: #fff;
+}
+
+body.magicui-site .btn-secondary {
+    background: transparent;
+    color: #14312e;
+    border: 1px solid #cfc8bb;
+}
+
+body.magicui-site .health-section .card,
+body.magicui-site .card {
+    background: #fff;
+    border: 1px solid #e4dfd6;
+    border-radius: 18px;
+    box-shadow: 0 1px 0 rgba(28, 25, 21, 0.04);
+}
+
+body.magicui-site .health-section .card .row {
+    flex-direction: column;
+    text-align: left;
+}
+
+body.magicui-site .health-section .card img {
+    width: 72px;
+    height: 72px;
+    object-fit: contain;
+    margin-bottom: 0.75rem;
+}
+
+body.magicui-site .hospital-directory {
+    padding: 1rem 0 3rem;
+}
+
+body.magicui-site .hospital-directory h2 {
+    font-size: clamp(1.8rem, 3vw, 2.4rem);
+    margin-bottom: 1.25rem;
+}
+
+body.magicui-site .hospital-directory-card {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    height: 100%;
+    padding: 1.15rem 1.2rem;
+    background: #fff;
+    border: 1px solid #e4dfd6;
+    border-radius: 16px;
+    text-decoration: none;
+    color: #1c1915;
+    box-shadow: 0 8px 20px rgba(28, 25, 21, 0.05);
+}
+
+body.magicui-site .hospital-directory-card:hover {
+    border-color: #0f6e6b;
+}
+
+body.magicui-site .hospital-directory-name {
+    font-family: Outfit, "Source Sans 3", sans-serif;
+    font-size: 1.15rem;
+    font-weight: 600;
+    letter-spacing: -0.03em;
+}
+
+body.magicui-site .hospital-directory-host {
+    color: #0f6e6b;
+    font-size: 0.95rem;
+}
+
+body.magicui-site .section-heading h2 {
+    font-size: clamp(1.8rem, 3vw, 2.6rem);
+}
+
+body.magicui-site header svg.lucide,
+body.magicui-site svg.lucide {
+    width: 18px;
+    height: 18px;
+    stroke: currentColor;
+}
+
+body.magicui-site .fa-check {
+    width: 1.4rem;
+    height: 1.4rem;
+    border-radius: 999px;
+    background: #e7f3f1 !important;
+    color: #0f6e6b !important;
+    font-size: 0.7rem;
+}
