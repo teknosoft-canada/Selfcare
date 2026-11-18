@@ -3,7 +3,6 @@
     {{ __('messages.hospital_details') }}
 @endsection
 @section('page_css')
-    {{--    <link href="{{ asset('assets/css/jquery.dataTables.min.css') }}" rel="stylesheet" type="text/css"/>--}}
     {{--    <link rel="stylesheet" href="{{ asset('assets/css/sub-header.css') }}">--}}
 @endsection
 @section('header_toolbar')
@@ -43,7 +42,6 @@
         {{ Form::hidden('superAdminHospitalBillingModalID', url('hospital-billing-modal'), ['id' => 'superAdminHospitalBillingModalID']) }}
     </div>
 @endsection
-{{--    <script src="{{ asset('assets/js/jquery.dataTables.min.js') }}"></script>--}}
 {{--    <script type="text/javascript">--}}
 {{--let userUrl = "{{ route('super.admin.hospitals.index') }}"--}}
 {{--let showUrl = "{{ route('super.admin.hospitals.datatable.index') }}"--}}

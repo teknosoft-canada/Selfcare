@@ -63,13 +63,13 @@ The product is installed from a SQL dump, not from `php artisan migrate --seed`.
 Clean install (recommended first run):
 
 ```bash
-mysql -u root -p selfcare < database/hms_saas.sql
+mysql -u root -p selfcare < database/selfcare.sql
 ```
 
 Optional demo dataset (sample hospitals and staff):
 
 ```bash
-mysql -u root -p selfcare < database/dummy-hms-saas.sql
+mysql -u root -p selfcare < database/dummy-selfcare.sql
 ```
 
 Import into an empty database. Do not import both dumps into the same schema. After a dump import, skip `php artisan migrate` unless you are applying a later official upgrade.

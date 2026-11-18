@@ -13,7 +13,6 @@
                     <div class="card-header border-0">
                         <div class="card-title m-0">
                             @if(getLoggedinDoctor())
-                                <a href="{{ route('googleAuth') }}" data-turbo="false"
                                     class="btn btn-primary m-0 cursor-pointer">{{ __('messages.google_meet.connect_calendar') }}</a>
                             @endif
                         </div>
@@ -82,7 +81,6 @@
                                            class="me-2 btn btn-primary me-2 mb-md-0 mb-2">
                                             {{ __('messages.google_meet.sync_google_calendar') }}
                                         </a>
-                                        <a href="{{ route('disconnectCalendar.destroy') }}" data-turbo="false"
                                            class="btn btn-danger m-0">{{ __('messages.google_meet.disconnect_google_calendar') }}</a>
                                     </div>
                                 </div>

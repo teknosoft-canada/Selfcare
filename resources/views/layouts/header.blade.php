@@ -56,7 +56,6 @@ $margin = 'margin-left:';
         @endif
         @endrole
         <li class="px-xxl-3 px-2">
-            <a data-turbo="false" href="{{ route('theme.mode') }}"
                 title="{{ getLoggedInUser()->theme_mode ? 'Switch to Light Mode' : 'Switch to Dark Mode' }}">
                 @if (getLoggedInUser()->theme_mode)
                     <i class="fa-solid fa-sun text-primary fs-3"></i>

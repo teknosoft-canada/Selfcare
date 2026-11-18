@@ -4,10 +4,7 @@
 @endsection
 @section('page_css')
     {{--    <link href="{{asset('assets/css/landing/landing.css')}}" rel="stylesheet" type="text/css"/>--}}
-{{--    <link href="{{asset('landing_front/css/slick.css')}}" rel="stylesheet" type="text/css">--}}
-{{--    <link href="{{asset('landing_front/css/slick-theme.css')}}" rel="stylesheet" type="text/css">--}}
 {{--    <link href="{{mix('landing_front/css/services.css')}}" rel="stylesheet" type="text/css">--}}
-    <link href="{{ asset('landing_front/css/jquery.toast.min.css') }}" rel="stylesheet" type="text/css"/>
 @endsection
 @section('content')
 
@@ -123,7 +120,6 @@
 
 @endsection
 @section('page_scripts')
-{{--    <script src="{{asset('landing_front/js/slick.min.js')}}"></script>--}}
     <script>
 
         // if($('#testimonial-carousel').length) {
@@ -172,8 +168,6 @@
     </script>
 @endsection
 @section('scripts')
-{{--    <script src="{{asset('landing_front/js/slick.min.js')}}"></script>--}}
-{{--<script src="//js.stripe.com/v3/"></script>--}}
 <script>
     {{--let getLoggedInUserdata = "{{ getLoggedInUser() }}"--}}
     {{--let logInUrl = "{{ url('login') }}"--}}

@@ -3,7 +3,6 @@
     {{ __('messages.doctor.doctor_details') }}
 @endsection
 @section('page_css')
-    <link href="{{ asset('assets/css/jquery.dataTables.min.css') }}" rel="stylesheet" type="text/css"/>
 @endsection
 @section('header_toolbar')
     <div class="container-fluid">

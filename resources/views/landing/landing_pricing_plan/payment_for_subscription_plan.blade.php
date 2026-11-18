@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="{{ asset('web_front/css/selectize.min.css') }}">
     <link href="{{ mix('assets/css/selectize-input.css') }}" rel="stylesheet" type="text/css" />
     {{--    <link href="{{mix('landing_front/css/choose-plan.css')}}" rel="stylesheet" type="text/css"> --}}
-    <link href="{{ asset('landing_front/css/jquery.toast.min.css') }}" rel="stylesheet" type="text/css" />
 @endsection
 @section('content')
 
@@ -358,8 +357,6 @@
 
 @endsection
 @section('page_scripts')
-    {{--    <script src="{{ asset('landing_front/js/jquery.toast.min.js') }}"></script> --}}
-    {{--    <script src="{{ mix('assets/js/third-party.js') }}"></script> --}}
     {{--    <script src="{{ mix('assets/js/custom/custom.js') }}"></script> --}}
 @endsection
 @section('scripts')
@@ -369,8 +366,6 @@
         });
     </script>
     <script src="{{ asset('web_front/js/selectize.min.js') }}"></script>
-    <script src="//js.stripe.com/v3/"></script>
-    <script src="//checkout.razorpay.com/v1/checkout.js"></script>
     <script>
         $('.payment-type').selectize();
         {{-- let getLoggedInUserdata = "{{ getLoggedInUser() }}" --}}

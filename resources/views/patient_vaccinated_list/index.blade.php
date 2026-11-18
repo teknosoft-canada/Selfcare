@@ -14,5 +14,4 @@
     </div>
 @endsection
 {{--let patientVaccinatedUrl = "{{ route('patient.vaccinated') }}"--}}
-{{--    <script src="{{ asset('assets/js/moment.min.js') }}"></script>--}}
 {{--    <script src="{{ mix('assets/js/vaccinated_patients/patient_vaccinated.js') }}"></script>--}}

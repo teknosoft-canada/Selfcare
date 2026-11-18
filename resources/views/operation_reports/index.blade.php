@@ -18,7 +18,6 @@
             @include('operation_reports.edit_modal')
         </div>
 @endsection
-{{--    <script src="{{ asset('assets/js/moment.min.js') }}"></script>--}}
 {{--        let operationReportUrl = "{{url('operation-reports')}}"--}}
 {{--        let operationReportCreateUrl = "{{route('operation-reports.store')}}";--}}
 {{--        let patientUrl = "{{ url('patients') }}";--}}

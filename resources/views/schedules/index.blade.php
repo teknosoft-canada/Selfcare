@@ -16,7 +16,6 @@
         </div>
     </div>
 @endsection
-{{--    <script src="{{ asset('assets/js/moment.min.js') }}"></script>--}}
 {{--let scheduleUrl = "{{ url('schedules') }}"--}}
 {{--let doctorUrl = "{{ url('doctors') }}"--}}
 {{--    <script src="{{mix('assets/js/schedules/schedules.js')}}"></script>--}}

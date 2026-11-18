@@ -17,7 +17,6 @@ function resetTheme () {
     }
 }
 
-// dark mode by https://github.com/coliff/dark-mode-switch
 const darkSwitch = document.getElementById('darkSwitch');
 
 // this is here so we can get the body dark mode before the page displays

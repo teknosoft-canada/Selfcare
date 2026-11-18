@@ -13,7 +13,6 @@
         </div>
     </div>
 @endsection
-{{--    <script src="{{ asset('assets/js/moment.min.js') }}"></script>--}}
 {{--let patientDiagnosisTestUrl = "{{url('employee/patient-diagnosis-test')}}"--}}
 {{--let doctorUrl = "{{ url('doctors') }}";--}}
 {{--let patientUrl = "{{ url('patients') }}";--}}

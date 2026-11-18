@@ -60,7 +60,6 @@
     {{Form::hidden('downloadPaymentDocumentUrl',url('ipd-payment-download'),['id'=>'showIpdDownloadPaymentDocumentUrl'])}}
     {{Form::hidden('downloadTimelineDocumentUrl',url('ipd-timeline-download'),['id'=>'showIpdDownloadTimelineDocumentUrl'])}}
     {{Form::hidden('isEditBill',($ipdPatientDepartment->bill)?1:'',['id'=>'showIsEditBill'])}}
-    {{Form::hidden('bootstrapUrl',asset('assets/css/bootstrap.min.css'),['id'=>'showIpdBootstrapUrl'])}}
     {{Form::hidden('billStatus',$ipdPatientDepartment->bill_status,['id'=>'showIpdBillStatus'])}}
     {{Form::hidden('ipdActionVisible',($ipdPatientDepartment->bill_status) ? false : true,['id'=>'showIpdActionVisible'])}}
     {{ Form::hidden('ipdChargeLang', __('messages.delete.ipd_charge'), ['id' => 'ipdChargeLang']) }}
@@ -104,7 +103,6 @@
     </div>
 @endsection
 @section('scripts')
-    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
     <script>
         {{--let ipdDiagnosisCreateUrl = "{{route('ipd.diagnosis.store')}}"--}}
         {{--let ipdDiagnosisUrl = "{{route('ipd.diagnosis.index')}}"--}}
@@ -136,7 +134,6 @@
         {{--let downloadPaymetDocumentUrl = "{{ url('ipd-payment-download') }}";--}}
         {{--let downloadTimelineDocumentUrl = "{{ url('ipd-timeline-download') }}";--}}
         {{--let isEditBill = "@if($ipdPatientDepartment->bill) {{ 1 }} @endif";--}}
-        {{--let bootstarpUrl = "{{ asset('assets/css/bootstrap.min.css') }}";--}}
         {{--let billstaus = "{{$ipdPatientDepartment->bill_status}}";--}}
         {{--let actionAcoumnVisibal = "{{ ($ipdPatientDepartment->bill_status) ? false : true }}";--}}
 

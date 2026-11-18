@@ -127,7 +127,6 @@
                     </div>
                     {{-- <div class="col-lg-4 col-md-6 mb-lg-5 mb-md-4 mb-3 d-flex align-items-stretch ps-4 ps-md-3">
                     <div class="card flex-fill ms-lg-4 me-xl-5 ms-md-4 me-md-2 ms-4 ps-1 ps-md-0">
-                        <a href="{{ route('front',$hospital->username) }}" data-turbo="false">
                             <div class="row justify-content-between align-items-center">
                                 <div class="col-md-2 col-1 ps-xl-2 ps-2">
                                     <img class="card-img rounded-circle"

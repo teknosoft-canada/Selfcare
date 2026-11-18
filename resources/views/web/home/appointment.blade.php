@@ -167,12 +167,9 @@
 @endsection
 @section('page_scripts')
     {{-- @if (getSettingForReCaptcha($userName)) --}}
-    {{--    <script src='https://www.google.com/recaptcha/api.js'></script> --}}
     {{-- @endif --}}
 @endsection
 @section('scripts')
-    <script src="//js.stripe.com/v3/"></script>
-    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
     <script>
         let options = {
             'key': "{{ getSelectedPaymentGateway('razorpay_key') }}",
@@ -215,5 +212,4 @@
             },
         }
     </script>
-    <script src="{{ asset('backend/js/moment-round/moment-round.js') }}"></script>
 @endsection

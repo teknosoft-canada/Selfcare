@@ -89,7 +89,6 @@
     </div>
 @endsection
 @section('scripts')
-    <script src="https://js.stripe.com/v3/"></script>
     <script>
         let makePaymentURL = "{{ route('purchase-subscription') }}";
         let subscribeText = "{{ __('messages.subscription_pricing_plans.choose_plan') }}";

@@ -9,12 +9,10 @@ App::setLocale(session('languageName'));
     {{ __('auth.registration.registration') }}
 @endsection
 @section('css')
-    <link href="{{ asset('backend/css/fonts.css') }}" rel="stylesheet" type="text/css"/>
    {{-- <link rel="stylesheet" href="{{ asset('node_modules/intl-tel-input/build/css/intlTelInput.css') }}"> --}}
 @endsection
 @section('content')
     <div class="auth-shell">
-        <a href="{{ route('landing-home') }}" data-turbo="false" class="image auth-logo">
             <img alt="Self Care" src="{{ asset($settingValue['app_logo']['value']) }}" class="img-fluid logo-fix-size">
         </a>
         <div class="auth-card bg-theme-white rounded-15 shadow-md width-540 px-5 px-sm-7 py-10">
@@ -141,7 +139,6 @@ App::setLocale(session('languageName'));
 
     </script>
 
-    <script src='https://www.google.com/recaptcha/api.js'></script>
    {{-- <script src="{{ asset('node_modules/intl-tel-input/build/js/intlTelInput.js') }}"></script> --}}
    <script>
             $(document).ready(function() {

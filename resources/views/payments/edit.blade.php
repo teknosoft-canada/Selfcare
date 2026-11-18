@@ -29,6 +29,5 @@
         </div>
     </div>
 @endsection
-{{--    <script src="{{ asset('assets/js/moment.min.js') }}"></script>--}}
 {{--    <script src="{{mix('assets/js/custom/input_price_format.js')}}"></script>--}}
 {{--    <script src="{{ mix('assets/js/payments/create-edit.js') }}"></script>--}}

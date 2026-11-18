@@ -17,7 +17,6 @@
             @include('birth_reports.edit_modal')
         </div>
     @endsection
-    {{--    <script src="{{ asset('assets/js/moment.min.js') }}"></script> --}}
     {{-- let birthReportUrl = "{{ url('birth-reports') }}" --}}
     {{-- let birthReportCreateUrl = "{{ route('birth-reports.store') }}" --}}
     {{-- let patientUrl = "{{ url('patients') }}" --}}

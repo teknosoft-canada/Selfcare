@@ -1,8 +1,10 @@
 # Self Care
 
-Self Care is a multi-hospital management system. Hospitals can register, subscribe to a plan, and run their own branded site at a unique slug, while a master (super admin) account manages the platform.
+> **PROPRIETARY — © 2026 Selfcare. All rights reserved.** This repository
+> contains Selfcare-owned code only. **No third-party code or licences are
+> permitted** — see `AGENTS.md` (hard agent rules) and root `LICENSE`.
 
-This repository is the Self Care branded application based on **Self Care** credits & licences
+Self Care is a multi-hospital management system. Hospitals can register, subscribe to a plan, and run their own branded site at a unique slug, while a master (super admin) account manages the platform.
 
 ## Features
 
@@ -20,21 +22,19 @@ This repository is the Self Care branded application based on **Self Care** cred
 
 | Component | Version |
 | --- | --- |
-| PHP | 8.1 or later (8.3 works) |
-| Laravel | 10.x |
-| Livewire | 3.x |
-| Tenancy | stancl/tenancy 3.7 (single database, `tenant_id`) |
-| Database | MySQL 5.7+ / 8.x or MariaDB 10.x |
-| Frontend | Laravel Mix, Bootstrap, jQuery |
+| PHP | 8.1 or later — vanilla PHP built-ins only (PDO, curl, openssl) |
+| Database | MySQL 5.7+ / 8.x or MariaDB 10.x via PDO |
+| Frontend | Hand-written vanilla CSS / JavaScript in `public/` — no libraries |
 
-Other notable packages include Spatie Permission and Media Library, Laravel Sanctum, and the payment SDKs listed above.
+No frameworks, packages, SDKs, CDNs, or third-party licences. Legacy code
+that still calls old framework APIs is Selfcare hospital logic being
+rewritten to the stack above — do not re-add any dependency to run it.
 
 ## Requirements
 
-- PHP 8.1+ with extensions: `bcmath`, `ctype`, `curl`, `fileinfo`, `gd`, `intl`, `json`, `mbstring`, `openssl`, `pdo`, `pdo_mysql`, `tokenizer`, `xml`, `zip`
-- Composer 2.x
+- PHP 8.1+ with built-in extensions: `curl`, `fileinfo`, `gd`, `intl`, `json`, `mbstring`, `openssl`, `pdo`, `pdo_mysql`, `xml`, `zip`
 - MySQL or MariaDB
-- Node.js 18+ and npm (only if you change frontend assets; compiled assets are already in `public/`)
+- No Composer packages, no Node/npm packages, no build tools
 - Optional PHP.ini increases for large uploads: `upload_max_filesize=50M`, `post_max_size=100M`, `max_file_uploads=50`
 
 Self Care must be served from a domain, subdomain, or `php artisan serve`. It will **not** work correctly from a subfolder such as `http://localhost/selfcare`.
@@ -90,11 +90,11 @@ The official product install uses a SQL dump rather than `php artisan migrate --
 From a MySQL client (or phpMyAdmin):
 
 ```bash
-mysql -u root -p selfcare < database/hms_saas.sql
+mysql -u root -p selfcare < database/selfcare.sql
 ```
 
-- `database/hms_saas.sql` — clean install (platform + super admin only)
-- `database/dummy-hms-saas.sql` — optional demo data with sample hospitals and staff
+- `database/selfcare.sql` — clean install (platform + super admin only)
+- `database/dummy-selfcare.sql` — optional demo data with sample hospitals and staff
 
 Do **not** run `php artisan migrate` against a freshly imported dump unless you are following an upgrade guide. The dump already includes the migration history.
 
@@ -128,7 +128,7 @@ On Windows, XAMPP/WAMP users should create a virtual host whose document root is
 
 ### 9. First login
 
-Importing `database/hms_saas.sql` creates the original product demo accounts. They are starter accounts only.
+Importing `database/selfcare.sql` creates the original product demo accounts. They are starter accounts only.
 
 - Create your own super admin (or change the demo account password) before using the system for anything real.
 - After login, open Super Admin → Settings and set the application name to **Self Care**, the logo to `web/img/selfcare-logo.png`, and the favicon to `web/img/selfcare-favicon.ico`.
@@ -234,6 +234,8 @@ storage/            Logs, cache, sessions, and currency JSON
 tests/              PHPUnit tests
 ```
 
-## Credits & licences
+## Licence
 
-Laravel, Livewire, stancl/tenancy, Spatie packages, and the bundled payment and UI libraries remain under their own licences (MIT and others). Licence comment files such as `public/js/*.LICENSE.txt` are retained. developed by **Arifuzzaman Raihan**
+Proprietary — © 2026 Selfcare. All rights reserved. See root `LICENSE`.
+No third-party licences apply to this repository, and none may be added.
+Agent rules: `AGENTS.md` and `.cursor/rules/proprietary-selfcare-no-third-party.mdc`.

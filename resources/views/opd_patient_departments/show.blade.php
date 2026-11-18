@@ -3,7 +3,6 @@
     {{ __('messages.opd_patient.opd_patient_details') }}
 @endsection
 @section('page_css')
-    <link href="{{ asset('landing_front/css/jquery.toast.min.css') }}" rel="stylesheet" type="text/css"/>
 @endsection
 @section('css')
     <link href="{{ asset('assets/css/timeline.css') }}" rel="stylesheet" type="text/css"/>
@@ -69,7 +68,6 @@
         </div>
     </div>
 @endsection
-{{--    <script src="{{ asset('assets/js/moment.min.js') }}"></script>--}}
 {{--let visitedOPDPatients = "{{ route('opd.patient.index') }}"--}}
 {{--let opdPatientUrl = "{{url('opds')}}"--}}
 {{--let doctorUrl = "{{url('doctors')}}"--}}

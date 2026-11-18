@@ -20,7 +20,6 @@
     </div>
 
 @endsection
-{{--    <script src="{{ asset('assets/js/moment.min.js') }}"></script>--}}
 {{--    <script src="{{ mix('assets/js/custom/delete.js') }}"></script>--}}
 {{--let advancedPaymentUrl = "{{url('advanced-payments')}}";--}}
 {{--let advancePaymentCreateUrl = "{{ route('advanced-payments.store') }}";--}}

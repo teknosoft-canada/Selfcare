@@ -1,6 +1,5 @@
 /* Main site and hospital sites, laid out in the Magic UI manner:
    large type, sticky navigation, framed photography, quiet paper. */
-@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700&family=Source+Sans+3:wght@400;600;700&display=swap");
 
 body.magicui-site {
     font-family: "Source Sans 3", ui-sans-serif, system-ui, sans-serif;

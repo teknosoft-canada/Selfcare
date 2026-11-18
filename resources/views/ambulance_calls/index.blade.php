@@ -47,7 +47,6 @@
         </div>
     </div>
 @endsection
-{{--    <script src="{{ asset('assets/js/moment.min.js') }}"></script>--}}
 {{--let ambulanceCallUrl = "{{ url('ambulance-calls') }}";--}}
 {{--let patientUrl = "{{url('patients')}}";--}}
 {{--    <script src="{{mix('assets/js/custom/input_price_format.js')}}"></script>--}}

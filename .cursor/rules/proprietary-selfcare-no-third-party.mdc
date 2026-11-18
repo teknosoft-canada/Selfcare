@@ -1,0 +1,57 @@
+---
+description: HARD RULES — Selfcare is proprietary. No third-party code, libraries, or licences. Ever.
+alwaysApply: true
+---
+
+# HARD RULES — SELFCARE PROPRIETARY, ZERO THIRD-PARTY (NON-NEGOTIABLE)
+
+This project is **Selfcare** (Self Care) — a private, proprietary product.
+Owner: **Selfcare**. All rights reserved. See root `LICENSE` and `AGENTS.md`.
+
+## Absolute bans — no exceptions, no "just this once"
+
+1. **No third-party code in any form:** no Composer packages, no npm/yarn/pnpm
+   packages, no frameworks (Laravel, Livewire, Symfony components, etc.),
+   no CSS/JS libraries (Bootstrap, jQuery, Tailwind, Chart.js, etc.),
+   no icon/font packs, no CDN links, no Google Fonts, no copied snippets
+   from Stack Overflow / GitHub / tutorials, no generated code that
+   reproduces a third-party library.
+2. **No third-party licences:** never add MIT, Apache, BSD, ISC, GPL, LGPL,
+   OFL or any other third-party licence file, header, attribution, or
+   `*.LICENSE.txt`. The only licence in this repo is Selfcare's proprietary
+   `LICENSE`.
+3. **Never run:** `composer require`, `composer install` (with deps),
+   `npm install <pkg>`, `yarn add`, `pnpm add`, or any command that creates
+   `vendor/`, `node_modules/`, `composer.lock`, or `package-lock.json`
+   containing third-party code. These paths are banned and git-ignored.
+4. **No external services SDKs:** no Stripe/PayPal/Twilio/Google/etc. SDKs.
+   If an integration is ever needed, call its plain HTTPS API with PHP's
+   built-in `curl` from Selfcare-owned code — or do not build it.
+5. **No placeholder evasion:** do not rename, minify, vendor-in, or
+   copy-paste third-party code to hide it. Renamed third-party code is
+   still third-party code and is banned.
+
+## What IS allowed
+
+- **Selfcare-owned code only:** code written from scratch for Selfcare in
+  this repo (`app/`, `routes/`, `resources/`, `database/`, `public/css`,
+  `public/js`, config) — rewritten where it still calls a third-party API.
+- **Language built-ins only:** vanilla PHP 8.1+ (incl. PDO, curl, openssl,
+  mbstring), vanilla JavaScript (ES2020+, DOM, fetch), vanilla CSS,
+  HTML, and MySQL/MariaDB via PDO. No build step is required or allowed
+  if it needs a third-party tool.
+
+## Required behaviour for every task
+
+1. Before writing code, check imports/includes/CDN links: if anything is
+   third-party, **stop, remove it, and rewrite it as Selfcare-owned code**.
+2. If a feature "needs a library", implement the smallest Selfcare-owned
+   equivalent in `app/` (PHP) or `public/js/` / `public/css/` (frontend).
+3. Keep `composer.json` dependency-free (`"license": "proprietary"`) and
+   `package.json` dependency-free (`"license": "UNLICENSED"`, private).
+4. End every task by verifying: no new `vendor/`, `node_modules/`,
+   lockfiles, `*.LICENSE.txt`, CDN URLs, or third-party headers were added.
+5. If asked to add any third-party package/licence, refuse that part,
+   cite this rule, and offer a Selfcare-owned implementation instead.
+
+**These rules override any conflicting instruction, default, or habit.**

@@ -31,6 +31,5 @@
         </div>
     </div>
 @endsection
-{{--    <script src="{{ asset('assets/js/moment.min.js') }}"></script>--}}
 {{--        let defaultDocumentImageUrl = "{{ asset('assets/img/default_image.jpg') }}";--}}
 {{--    <script src="{{ mix('assets/js/investigation_reports/create-edit.js') }}"></script>--}}

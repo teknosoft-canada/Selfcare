@@ -10,10 +10,8 @@
     <link rel="icon" href="{{ asset(getSuperAdminSettingKeyValue('favicon')) }}" type="image/png">
     <link rel="canonical" href="{{ route('landing-home') }}" />
     <link rel="stylesheet" href="{{ asset('favicon.ico') }}" type="image/png">
-    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" />
     <link href="{{ mix('assets/css/style.css') }}" rel="stylesheet" type="text/css" />
     <link href="{{ mix('/assets/css/custom-auth.css') }}" rel="stylesheet" type="text/css" />
-    <link href="{{ mix('assets/css/third-party.css') }}" rel="stylesheet" type="text/css" />
     @yield('css')
     <link rel="stylesheet" href="{{ asset('css/selfcare-brand.css') }}">
     <link rel="stylesheet" href="{{ asset('css/magicui-public.css') }}">
@@ -33,7 +31,6 @@ $style = 'style=';
     {{ Form::hidden('tooShort', __('messages.common.too_short'), ['class' => 'tooShort']) }}
     {{ Form::hidden('tooLong', __('messages.common.too_long'), ['class' => 'tooLong']) }}
     <!-- Scripts -->
-    <script src="{{ mix('assets/js/third-party.js') }}"></script>
     @yield('scripts')
     <script>
         $(document).ready(function() {
@@ -56,7 +53,6 @@ $style = 'style=';
         })
 
     </script>
-    <script src="https://unpkg.com/lucide@0.544.0/dist/umd/lucide.min.js"></script>
     <script src="{{ asset('js/lucide-icons.js') }}"></script>
 </body>
 

@@ -18,7 +18,6 @@ class ValidRecaptcha implements Rule
     {
         // Validate ReCaptcha
         $client = new Client([
-            'base_uri' => 'https://google.com/recaptcha/api/',
         ]);
 
         $response = $client->post('siteverify', [

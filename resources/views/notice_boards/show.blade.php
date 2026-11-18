@@ -29,6 +29,5 @@
     </div>
     @include('notice_boards.edit_modal')
 @endsection
-{{--    <script src="{{ asset('assets/js/moment.min.js') }}"></script>--}}
 {{--        let noticeBoardUrl = "{{url('notice-boards')}}";--}}
 {{--    <script src="{{ mix('assets/js/notice_boards/create-details-edit.js') }}"></script>--}}

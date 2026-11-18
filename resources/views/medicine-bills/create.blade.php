@@ -48,7 +48,6 @@
     {{--    assets/js/bills/new.js --}}
     {{--    assets/js/custom/input_price_format.js --}}
 @section('scripts')
-<script src="https://checkout.razorpay.com/v1/checkout.js"></script>
 <script>
     let options = {
         'key': "{{ getPaymentCredentials('razorpay_key') }}",

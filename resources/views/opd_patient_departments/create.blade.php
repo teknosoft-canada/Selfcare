@@ -34,7 +34,6 @@
         </div>
     </div>
 @endsection
-{{--    <script src="{{ asset('assets/js/moment.min.js') }}"></script>--}}
 {{--let patientCasesUrl = "{{ route('patient.cases.list') }}";--}}
 {{--let doctorOpdChargeUrl = "{{ route('getDoctor.OPDcharge') }}";--}}
 {{--let isEdit = false;--}}

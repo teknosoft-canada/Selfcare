@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-    <link rel="icon" href="{{ asset('hms-saas-favicon.ico') }}" type="image/png">
+    <link rel="icon" href="{{ asset('selfcare-favicon.ico') }}" type="image/png">
     <title>{{ __('messages.new_change.patient_diagnosis_test_report') }}</title>
     <link href="{{ asset('assets/css/diagnosis-test-pdf.css') }}" rel="stylesheet" type="text/css"/>
     <style>

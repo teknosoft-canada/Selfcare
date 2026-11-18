@@ -32,7 +32,6 @@
         </div>
     </div>
 @endsection
-{{--    <script src="{{ asset('assets/js/moment.min.js') }}"></script>--}}
 {{--let defaultDocumentImageUrl = "{{ asset('assets/img/default_image.jpg') }}";--}}
 {{--let pdfDocumentImageUrl = "{{ url('assets/img/pdf.png') }}";--}}
 {{--    <script src="{{ mix('assets/js/investigation_reports/create-edit.js') }}"></script>--}}

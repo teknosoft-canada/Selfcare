@@ -12,7 +12,6 @@
                     </a>
                 </li>
                 <li>
-                    <a href="{{ route('radiology.tests.excel') }}" class="dropdown-item  px-5" data-turbo="false">
                         {{ __('messages.common.export_to_excel') }}
                     </a>
                 </li>

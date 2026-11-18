@@ -19,9 +19,7 @@
     <link rel="icon"
         href="{{ !getLoggedInUser()->hasRole('Super Admin') ? asset($hospitalSettingValue['favicon']['value']) : asset($settingValue['favicon']['value']) }}"
         type="image/png">
-    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" />
 
-    <link href="{{ mix('assets/css/third-party.css') }}" rel="stylesheet" type="text/css" />
     <link href="{{ mix('assets/css/custom.css') }}" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="{{ asset('css/selfcare-brand.css') }}">
     <link rel="manifest" href="{{ asset('site.webmanifest') }}">
@@ -29,59 +27,32 @@
     {{--    <link href="{{ mix('assets/css/style.css') }}" rel="stylesheet" type="text/css"/> --}}
     @if (getLoggedInUser()->theme_mode)
         <link href="{{ mix('assets/css/style.dark.css') }}" rel="stylesheet" type="text/css" />
-        <link href="{{ mix('assets/css/plugins.dark.css') }}" rel="stylesheet" type="text/css" />
         <link href="{{ mix('assets/css/phone-number-dark.css') }}" rel="stylesheet" type="text/css" />
     @else
         <link href="{{ mix('assets/css/style.css') }}" rel="stylesheet" type="text/css" />
-        <link href="{{ mix('assets/css/plugins.css') }}" rel="stylesheet" type="text/css" />
     @endif
     <link rel="stylesheet" href="{{ asset('css/boardui-dashboard.css') }}">
 
        @livewireStyles
     {{--    <script src="{{ asset('livewire/livewire.css') }}"></script> --}}
     {{--    <link href="{{ asset('backend/css/vendor.css') }}" rel="stylesheet" type="text/css"/> --}}
-    {{--    <link href="{{ asset('backend/css/datatables.css') }}" rel="stylesheet" type="text/css"/> --}}
-    {{--    <link href="{{ asset('backend/css/fonts.css') }}" rel="stylesheet" type="text/css"/> --}}
     @yield('page_css')
-    {{--    <link href="{{ asset('backend/css/3rd-party.css') }}" rel="stylesheet" type="text/css"/> --}}
-    {{--    <link href="{{ asset('backend/css/3rd-party-custom.css') }}" rel="stylesheet" type="text/css"/> --}}
 
     {{--    @if (getLoggedInUser()->language == 'ar') --}}
-    {{--        <link href="{{ asset('backend/css/style.bundle.rtl.css') }}" rel="stylesheet" type="text/css"/> --}}
-    {{--        <link href="{{asset('backend/plugins/global/plugins.bundle.rtl.css')}}" rel="stylesheet" type="text/css"/> --}}
     {{--        <link href="{{asset('assets/css/style-rtl.css')}}" rel="stylesheet" type="text/css"/> --}}
     {{--    @else --}}
-    {{--        <link href="{{ asset('backend/css/style.bundle.css') }}" rel="stylesheet" type="text/css"/> --}}
     {{--    @endif --}}
     @yield('css')
 
-    {{--    <script src="https://cdn.skypack.dev/@hotwired/turbo"></script> --}}
     {{-- <script src="{{ asset('backend/js/vendor.js') }}"></script> --}}
-    {{-- <script src="{{ asset('backend/js/datatables.js') }}"></script> --}}
-    {{-- <script src="{{ asset('backend/js/3rd-party-custom.js') }}"></script> --}}
     <script>
-        let sweetAlertIcon = "{{ asset('assets/images/remove.png') }}"
         let defaultCountryCodeValue = "{{ $settingValue['default_country_code']['value'] }}"
         let UserCurrentLang = "{{ getLoggedInUser()->language }}";
     </script>
     @routes
        @livewireScripts
-    {{-- <script src="{{ asset('vendor/livewire/livewire.js') }}" data-turbolinks-eval="false" data-turbo-eval="false"></script> --}}
-    {{-- @include('livewire.livewire-turbo')
-    <script src="{{ asset('js/turbo.js') }}" data-turbolinks-eval="false" data-turbo-eval="false"></script> --}}
-    <script src="https://cdn.jsdelivr.net/gh/livewire/turbolinks@v0.1.x/dist/livewire-turbolinks.js"
-    data-turbolinks-eval="false" data-turbo-eval="false"></script>
-    <script src="https://js.stripe.com/v3/"></script>
-    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
-    <script src="//cdn.jsdelivr.net/npm/chart.js"></script>
-    <script src="https://npmcdn.com/flatpickr@4.5.2/dist/l10n"></script>
-    <script src="{{ asset('assets/js/third-party.js') }}"></script>
-    <script src="{{ asset('messages.js') }}"></script>
-    <script src="{{ mix('js/pages.js') }}"></script>
     {{-- <script src="{{ mix('assets/js/custom/custom.js') }}"></script> --}}
     {{-- <script src="{{ mix('assets/js/custom/helpers.js') }}"></script> --}}
-    {{-- <script src="{{ mix('js/pages.js') }}"></script> --}}
-    {{-- <script src="{{ mix('assets/js/dataTables.min.js') }}"></script> --}}
 
     @yield('page_scripts')
     <script>
@@ -199,7 +170,6 @@ $style = 'style=';
     {{ Form::hidden('hasBeenDeletedVariable', __('messages.common.has_been_deleted'), ['class' => 'hasBeenDeletedVariable']) }}
     {{ Form::hidden('okVariable', __('messages.common.ok'), ['class' => 'okVariable']) }}
 
-    <script src="https://unpkg.com/lucide@0.544.0/dist/umd/lucide.min.js"></script>
     <script src="{{ asset('js/lucide-icons.js') }}"></script>
 
 </body>

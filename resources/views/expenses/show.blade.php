@@ -33,7 +33,6 @@
         </div>
     </div>
 @endsection
-{{--    <script src="{{ asset('assets/js/moment.min.js') }}"></script>--}}
 {{--let expenseUrl = "{{url('expenses')}}"--}}
 {{--let defaultDocumentImageUrl = "{{ asset('assets/img/default_image.jpg') }}"--}}
 {{--let download = "{{__('messages.expense.download')}}"--}}

@@ -71,7 +71,6 @@
         </div>
     </div>
 @endsection
-{{--    <script src="{{ asset('assets/js/moment.min.js') }}"></script>--}}
 {{--        let ambulanceUrl = "{{ url('ambulances') }}";--}}
 {{--    <script src="{{mix('assets/js/ambulances/ambulances.js')}}"></script>--}}
 {{--    <script src="{{ mix('assets/js/custom/delete.js') }}"></script>--}}

@@ -3,7 +3,6 @@
     Home
 @endsection
 @section('page_css')
-    <link rel="stylesheet" href="{{ asset('web/css/animate.css') }}">
 @endsection
 @section('content')
     

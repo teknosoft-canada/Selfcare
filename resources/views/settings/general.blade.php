@@ -98,7 +98,7 @@
                         <div class="image-picker">
                             <div class="image previewImage" id="logoPreviewImage"
                                 {{$style}}="{{$background}} url({{ ($settings['app_logo']) ?
-                                                $settings['app_logo'] : asset('hms-saas-logo.png') }})">
+                                                $settings['app_logo'] : asset('selfcare-logo.png') }})">
                             </div>
                             <span class="picker-edit rounded-circle text-gray-500 fs-small" data-bs-toggle="tooltip"
                                   data-placement="top"
@@ -134,7 +134,7 @@
                     <div class="image-picker">
                         <div class="image previewImage" id="previewImage"
                         {{$style}}="{{$background}} url({{ ($settings['favicon']) ?
-                                        $settings['favicon'] : asset('web/img/hms-saas-favicon.ico') }})">
+                                        $settings['favicon'] : asset('web/img/selfcare-favicon.ico') }})">
                         </div>
                         <span class="picker-edit rounded-circle text-gray-500 fs-small" data-bs-toggle="tooltip"
                               data-placement="top"

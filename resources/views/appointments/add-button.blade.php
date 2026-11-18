@@ -12,7 +12,6 @@
     @endif
     @if (Auth::user()->hasRole('Doctor'))
         <div class="d-flex align-items-center py-1">
-            <a data-turbo="false" href="{{ route('appointments.excel') }}"
                class="btn btn-primary">{{ __('messages.common.export_to_excel') }}</a>
         </div>
     @endif
@@ -29,7 +28,6 @@
                     </a>
                 </li>
                 <li>
-                    <a href="{{ route('appointments.excel') }}" class="dropdown-item  px-5" data-turbo="false">
                         {{ __('messages.common.export_to_excel') }}
                     </a>
                 </li>

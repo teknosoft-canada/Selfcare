@@ -1,7 +1,16 @@
-Self Care
+SELFCARE — PROPRIETARY SOFTWARE
 
-Copyright (c) 2026 Arifuzzaman Raihan
+Copyright (c) 2026 Selfcare. All rights reserved.
 
-This project is Self Care. The name, branding, and application content in this repository are Self Care.
+This software, "Selfcare" (Self Care) hospital management system, including
+all source code, design, branding, documentation, and assets in this
+repository, is the exclusive proprietary property of Selfcare.
 
-Third-party libraries that ship inside vendor and public asset folders keep the licences that came with those libraries.
+No part of this software may be copied, modified, distributed, sublicensed,
+sold, reverse engineered, or used in any way except by Selfcare or with
+prior written permission from Selfcare.
+
+This repository contains no third-party licenced software. No MIT, Apache,
+BSD, ISC, GPL, LGPL, OFL, or any other third-party licence applies to any
+file in this repository, and no third-party code may be added to it.
+See AGENTS.md for the binding agent rules.

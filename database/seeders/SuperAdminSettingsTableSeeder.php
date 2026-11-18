@@ -12,8 +12,8 @@ class SuperAdminSettingsTableSeeder extends Seeder
      */
     public function run(): void
     {
-        $imageUrl = ('web/img/hms-saas-logo.png');
-        $favicon = ('web/img/hms-saas-favicon.ico');
+        $imageUrl = ('web/img/selfcare-logo.png');
+        $favicon = ('web/img/selfcare-favicon.ico');
 
         SuperAdminSetting::create(['key' => 'app_name', 'value' => 'Self Care']);
         SuperAdminSetting::create(['key' => 'app_logo', 'value' => $imageUrl]);

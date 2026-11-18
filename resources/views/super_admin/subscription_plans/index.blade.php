@@ -3,7 +3,6 @@
     {{ __('messages.subscription_plan') }}
 @endsection
 @section('page_css')
-    {{--    <link rel="stylesheet" href="{{ asset('assets/css/dataTables.css') }}"> --}}
 @endsection
 @section('content')
     <div class="container-fluid">
@@ -16,7 +15,6 @@
     </div>
 @endsection
 {{-- let subscriptionPlanUrl = "{{ route('super.admin.subscription.plans.index') }}" --}}
-{{--    <script src="{{ mix('assets/js/dataTables.min.js') }}"></script> --}}
 {{--    <script src="{{ mix('assets/js/custom/delete.js') }}"></script> --}}
 {{--    <script src="{{ mix('assets/js/custom/input_price_format.js') }}"></script> --}}
 {{--    <script src="{{ mix('assets/js/super_admin/subscription_plans/subscription_plan.js') }}"></script> --}}

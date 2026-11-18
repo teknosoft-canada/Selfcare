@@ -106,7 +106,7 @@ class AuthController extends AppBaseController
 
         $data['token'] = encrypt($data['user']->email.''.$data['user']->id);
 
-        $data['link'] = $request->url_domain.'//hms-saas.com/createNewPassword?token='.$data['token'].'&email='.$request->email.'&apn=com.example.infyhms_flutter';
+        $data['link'] = $request->url_domain.'//selfcare/createNewPassword?token='.$data['token'].'&email='.$request->email.'&apn=com.example.selfcare_flutter';
 
         Mail::to($data['user']->email)
             ->send(new ForgotPasswordMail('emails.forgot_password',

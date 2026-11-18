@@ -18,7 +18,6 @@
     <link rel="icon" href="{{ asset($hospitalSettingValue['favicon']['value']) }}" type="image/png">
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <title>Email Verification | {{ getSuperAdminSettingKeyValue('app_name') }}</title>
-    <link rel="stylesheet" href="{{ mix('web_front/css/hospital-bootstrap.css') }}">
     @yield('page_css')
 </head>
 <body>

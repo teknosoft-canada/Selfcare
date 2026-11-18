@@ -29,6 +29,5 @@
         </div>
     </div>
 @endsection
-{{--    <script src="{{ asset('assets/js/moment.min.js') }}"></script> --}}
 {{--        let birthReportUrl = "{{ url('birth-reports') }}" --}}
 {{--    <script src="{{ mix('assets/js/birth_reports/create-details-edit.js') }}"></script> --}}

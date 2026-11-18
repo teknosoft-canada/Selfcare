@@ -3,8 +3,6 @@
     {{ __('messages.roles') }}
 @endsection
 @section('page_css')
-    <link href="{{ asset('assets/css/jquery.dataTables.min.css') }}" rel="stylesheet" type="text/css"/>
-    <link href="{{ asset('landing_front/css/jquery.toast.min.css') }}" rel="stylesheet" type="text/css"/>
 @endsection
 
 @section('content')
@@ -43,8 +41,6 @@
     </div>
 @endsection
 {{-- Both JS need for load datatble --}}
-{{--    <script src="{{ asset('assets/js/jquery.dataTables.min.js') }}"></script>--}}
-{{--    <script src="{{ asset('landing_front/js/jquery.toast.min.js') }}"></script>--}}
 {{--        let departmentCreateUrl = "{{route('departments.store')}}"--}}
 {{--        let departmentUrl = "{{route('departments.index')}}/"--}}
 {{--    <script src="{{mix('assets/js/departments/departments.js')}}"></script>--}}

@@ -71,7 +71,6 @@
                         </p>
                     </div>
                     <div class="d-flex align-items-center footer-info__block mb-3 pb-1">
-                        <a href="{{ route('landing-home') }}" type="submit" data-turbo="false" class="btn btn-primary">{{__('messages.new_change.back_to_main_site')}}</a>
                     </div>
                 </div>
             </div>

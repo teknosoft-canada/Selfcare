@@ -3,7 +3,6 @@
     {{ __('messages.package.edit_package') }}
 @endsection
 @section('page_css')
-    <link href="{{ asset('landing_front/css/jquery.toast.min.css') }}" rel="stylesheet" type="text/css"/>
 @endsection
 @section('css')
 {{--    <link href="{{ asset('assets/css/bill.css') }}" rel="stylesheet" type="text/css"/>--}}
@@ -43,7 +42,6 @@
         @include('packages.templates.templates')
     </div>
 @endsection
-{{--    <script src="{{ asset('landing_front/js/jquery.toast.min.js') }}"></script>--}}
 {{--        let packageSaveUrl = "{{ route('packages.update', $package->id) }}"--}}
 {{--        let packageUrl = "{{route('packages.index')}}"--}}
 {{--        let associateServices = JSON.parse('@json($services)')--}}

@@ -34,3 +34,12 @@ yarn-error.log
 *.bak
 *.bak-*
 *~
+
+# Selfcare proprietary — third-party code is BANNED (see AGENTS.md)
+/vendor/
+/node_modules/
+composer.lock
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+*.LICENSE.txt

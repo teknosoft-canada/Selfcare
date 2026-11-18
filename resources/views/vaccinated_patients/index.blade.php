@@ -21,7 +21,6 @@
     </div>
 @endsection
 {{--    <script src="{{ mix('assets/js/custom/delete.js') }}"></script>--}}
-{{--    <script src="{{ asset('assets/js/moment.min.js') }}"></script>--}}
 {{--let vaccinatedPatientCreateUrl = "{{ route('vaccinated-patients.store') }}"--}}
 {{--let vaccinatedPatientUrl = "{{ route('vaccinated-patients.index') }}"--}}
 {{--let patientUrl = "{{ url('patients') }}"--}}

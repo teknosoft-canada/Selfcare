@@ -5,7 +5,6 @@
 @section('page_css')
     {{--    <link href="{{asset('assets/css/landing/landing.css')}}" rel="stylesheet" type="text/css"/> --}}
     {{--    <link href="{{mix('landing_front/css/contact.css')}}" rel="stylesheet" type="text/css"> --}}
-    <link href="{{ asset('landing_front/css/jquery.toast.min.css') }}" rel="stylesheet" type="text/css" />
 @endsection
 @section('content')
     @php
@@ -219,7 +218,6 @@
     </div>
 @endsection
 @section('scripts')
-    <script src='https://www.google.com/recaptcha/api.js'></script>
     <script>
         $(document).ready(function() {
             var phoneNo = $('.phoneNo').val();

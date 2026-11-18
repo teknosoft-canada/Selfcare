@@ -31,6 +31,5 @@
         </div>
     </div>
 @endsection
-{{--    <script src="{{ asset('assets/js/moment.min.js') }}"></script> --}}
 {{--        let operationReportUrl = "{{url('operation-reports')}}"; --}}
 {{--    <script src="{{ mix('assets/js/operation_reports/create-details-edit.js') }}"></script> --}}

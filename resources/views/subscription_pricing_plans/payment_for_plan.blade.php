@@ -3,7 +3,6 @@
     {{ __('messages.subscription_plans.payment_type') }}
 @endsection
 @section('page_css')
-    <link href="{{ asset('landing_front/css/jquery.toast.min.css') }}" rel="stylesheet" type="text/css" />
 @endsection
 @section('header_toolbar')
     <div class="container-fluid">
@@ -387,11 +386,8 @@
 
 @endsection
 @section('page_scripts')
-    <script src="{{ asset('landing_front/js/jquery.toast.min.js') }}"></script>
 @endsection
 @section('scripts')
-    <script src="//js.stripe.com/v3/"></script>
-    <script src="//checkout.razorpay.com/v1/checkout.js"></script>
     <script>
         {{-- let makePaymentURL = "{{ route('purchase-subscription') }}" --}}
         {{-- let subscribeText = "{{ __('messages.subscription_pricing_plans.choose_plan') }}" --}}

@@ -1,7 +1,6 @@
 /* Every dashboard page shares layouts/app.blade.php.
    These rules restyle that shell to Board UI tokens:
    neutral canvas, white cards, hairline borders, blue accent. */
-@import url("https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&display=swap");
 
 body.boardui-app {
     --b-canvas: #f7f7f7;

@@ -33,6 +33,5 @@
     </div>
 @endsection
 {{--        let getDriverNameUrl = "{{ route('driver.name') }}";--}}
-{{--    <script src="{{ asset('assets/js/moment.min.js') }}"></script>--}}
 {{--    <script src="{{ mix('assets/js/ambulance_call/create-edit.js') }}"></script>--}}
 {{--    <script src="{{mix('assets/js/custom/input_price_format.js')}}"></script>--}}

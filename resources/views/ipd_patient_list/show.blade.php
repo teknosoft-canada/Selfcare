@@ -29,7 +29,6 @@
             @include('ipd_prescriptions.show_modal')
             @include('ipd_payments.add_modal')
             {{Form::hidden('ipdPrescriptionUrl',route('ipd.prescription.index'),['id'=>'showListIpdPrescriptionUrl'])}}
-            {{Form::hidden('bootStrapUrl',asset('assets/css/bootstrap.min.css'),['id'=>'showListBootstrapUrl'])}}
             {{Form::hidden('ipdPatientDepartmentId',$ipdPatientDepartment->id,['id'=>'showListIpdPatientDepartmentId'])}}
             {{Form::hidden('ipdTimelinesUrl',route('ipd.timelines.index'),['id'=>'showListIpdTimelinesUrl'])}}
             {{Form::hidden('ipdPaymentCreateUrl',route('ipd.payments.store'),['id'=>'showIpdPaymentCreateUrl'])}}
@@ -46,8 +45,6 @@
     </div>
 @endsection
 @section('scripts')
-    <script src="//js.stripe.com/v3/"></script>
-    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
     {{--let ipdDiagnosisUrl = "{{route('ipd.diagnosis.index')}}"--}}
     {{--let ipdConsultantRegisterUrl = "{{route('ipd.consultant.index')}}";--}}
     {{--let ipdChargesUrl = "{{route('ipd.charge.index')}}";--}}
@@ -62,7 +59,6 @@
     {{--let downloadDiagnosisDocumentUrl = "{{ url('ipd-diagnosis-download') }}";--}}
     {{--let downloadPaymetDocumentUrl = "{{ url('ipd-payment-download') }}";--}}
     {{--let downloadTimelineDocumentUrl = "{{ url('ipd-timeline-download') }}";--}}
-    {{--let bootstarpUrl = "{{ asset('assets/css/bootstrap.min.css') }}";--}}
     {{--    <script src="{{ mix('assets/js/ipd_patients_list/ipd_diagnosis.js') }}"></script>--}}
     {{--    <script src="{{ mix('assets/js/ipd_patients_list/ipd_consultant_register.js') }}"></script>--}}
     {{--    <script src="{{ mix('assets/js/ipd_patients_list/ipd_charges.js') }}"></script>--}}

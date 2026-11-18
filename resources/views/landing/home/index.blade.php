@@ -5,7 +5,6 @@
 @section('page_css')
     {{--    <link href="{{asset('assets/css/landing/landing.css')}}" rel="stylesheet" type="text/css"/>--}}
 {{--    <link href="{{mix('landing_front/css/home.css')}}" rel="stylesheet" type="text/css">--}}
-    <link href="{{ asset('landing_front/css/jquery.toast.min.css') }}" rel="stylesheet" type="text/css"/>
 @endsection
 @section('content')
 
@@ -22,7 +21,6 @@
                             @endif
                             <div class="d-flex align-items-center justify-content-center justify-content-lg-start">
                                 @if(!getLoggedInUser())
-                                    <a href="{{ route('register') }}" data-turbo="false"
                                        class="btn btn-primary me-3">{{ __('messages.web_home.sign_up') }}</a>
                                 @endif
                                 <a href="{{ route('landing.contact.us') }}"
@@ -192,7 +190,6 @@
                                         <a href="{{ route('landing.contact.us') }}"
                                            class="btn btn-primary me-3">{{ __('messages.contact_us') }}</a>
                                         @if(!getLoggedInUser())
-                                            <a href="{{ route('register') }}" data-turbo="false"
                                                class="btn btn-secondary ms-1">{{ __('messages.web_home.sign_up') }}</a>
                                         @endif
                                     </div>
@@ -306,7 +303,6 @@
 
 @endsection
 @section('page_scripts')
-{{--    <script src="{{ asset('landing_front/js/jquery.toast.min.js') }}"></script>--}}
 @endsection
 @section('scripts')
     <script>

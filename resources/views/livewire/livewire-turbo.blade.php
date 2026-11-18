@@ -1,7 +1,6 @@
 <script>
     let livewireToken = "{{ csrf_token() }}"
 </script>
-<script data-turbo-eval="false" data-turbolinks-eval="false">
     window.livewire = new Livewire();
     window.Livewire = window.livewire;
     window.livewire_app_url = '';

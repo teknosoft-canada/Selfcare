@@ -8,7 +8,6 @@
     <div class="container">
         <div class="row align-items-center">
             <div class="col-lg-3 col-sm-5 col-6">
-                <a href="{{ route('front', $user->username) }}" data-turbo="false" class="header-logo">
                     <img src="{{ asset($hospitalSettingValue['app_logo']['value']) }}" alt="Self Care"
                          class="img-fluid"/>
                 </a>
@@ -115,61 +114,51 @@
                         <div class="text-xl-end header-btn-grp ms-xl-3">
                             @if (Auth::user())
                                 @role('Admin')
-                                    <a href="{{ route('dashboard') }}" data-turbo="false"
                                         class="btn btn-success me-2 mb-3 mb-xl-0" data-turbo="false">
                                         {{ __('messages.dashboard.dashboard') }}
                                     </a>
                                 @endrole
                                 @role('Patient')
-                                    <a href="{{ url('patient/my-cases') }}" data-turbo="false"
                                         class="btn btn-success me-2 mb-3 mb-xl-0" data-turbo="false">
                                         {{ __('messages.dashboard.dashboard') }}
                                     </a>
                                 @endrole
                                 @role('Doctor')
-                                    <a href="{{ url('employee/doctor') }}" data-turbo="false"
                                         class="btn btn-success me-2 mb-3 mb-xl-0" data-turbo="false">
                                         {{ __('messages.dashboard.dashboard') }}
                                     </a>
                                 @endrole
                                 @role('Nurse')
-                                    <a href="{{ url('bed-types') }}" data-turbo="false"
                                         class="btn btn-success me-2 mb-3 mb-xl-0" data-turbo="false">
                                         {{ __('messages.dashboard.dashboard') }}
                                     </a>
                                 @endrole
                                 @role('Receptionist')
-                                    <a href="{{ url('appointments') }}" data-turbo="false"
                                         class="btn btn-success me-2 mb-3 mb-xl-0" data-turbo="false">
                                         {{ __('messages.dashboard.dashboard') }}
                                     </a>
                                 @endrole
                                 @role('Pharmacist')
-                                    <a href="{{ url('employee/doctor') }}" data-turbo="false" class="default-btn"
                                         data-turbo="false">
                                         {{ __('messages.dashboard.dashboard') }}
                                     </a>
                                 @endrole
                                 @role('Accountant')
-                                    <a href="{{ url('accounts') }}" data-turbo="false"
                                         class="btn btn-success me-2 mb-3 mb-xl-0" data-turbo="false">
                                         {{ __('messages.dashboard.dashboard') }}
                                     </a>
                                 @endrole
                                 @role('Case Manager')
-                                    <a href="{{ url('employee/doctor') }}" data-turbo="false"
                                         class="btn btn-success me-2 mb-3 mb-xl-0" data-turbo="false">
                                         {{ __('messages.dashboard.dashboard') }}
                                     </a>
                                 @endrole
                                 @role('Lab Technician')
-                                    <a href="{{ url('employee/doctor') }}" data-turbo="false"
                                         class="btn btn-success me-2 mb-3 mb-xl-0" data-turbo="false">
                                         {{ __('messages.dashboard.dashboard') }}
                                     </a>
                                 @endrole
                             @else
-                                <a href="{{ route('login') }}" data-turbo="false"
                                     class="btn btn-success btn-sm me-xxl-3 me-2 mb-3 rounded-2 mb-xl-0"
                                     data-turbo="false">
                                     {{ __('messages.web_menu.login') }}

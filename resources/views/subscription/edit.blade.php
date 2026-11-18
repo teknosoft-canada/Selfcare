@@ -31,6 +31,5 @@
         </div>
     </div>
 @endsection
-{{--    <script src="{{ asset('assets/js/moment.min.js') }}"></script>--}}
 {{--        let editEndAt = '{{ $subscription->ends_at->format('Y-m-d H:i') }}';--}}
 {{--    <script src="{{mix('assets/js/subscription/create-edit.js')}}"></script>--}}

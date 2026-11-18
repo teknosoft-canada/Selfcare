@@ -3,7 +3,6 @@
     {{ __('messages.subscription_plans.transactions') }}
 @endsection
 @section('page_css')
-    {{--    <link rel="stylesheet" href="{{ asset('assets/css/dataTables.css') }}"> --}}
     {{--    <link rel="stylesheet" href="{{ asset('assets/css/sub-header.css') }}"> --}}
 @endsection
 @section('content')

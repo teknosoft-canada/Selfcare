@@ -20,7 +20,7 @@ return [
     'start_using_Self Care_now' => 'ابدأ باستخدام Self Care الآن.',
     'get_started' => 'البدء',
     'welcome_to' => 'مرحبا بك في',
-    'infyhms' => 'Self Care',
+    'selfcare' => 'Self Care',
     'manage_your_hospital_day_to_day_operations_digitally_with_ease_and_effortlessly' => 'إدارة العمليات اليومية للمستشفى الخاص بك رقميًا بكل سهولة وبدون عناء',
     'buy_now' => 'اشتري الآن',
     'home' => 'الصفحة الرئيسية',
@@ -69,7 +69,7 @@ return [
 
     //MISCELLANEOUS FACILITIES keys
     'miscellaneous_facilities' => [
-        'miscellaneous_facilities_of_infyhms' => 'مرافق متنوعة للأنفيمس',
+        'miscellaneous_facilities_of_selfcare' => 'مرافق متنوعة للأنفيمس',
         'host_in_your_Own_secure_server' => 'استضف في خادمك الآمن.',
         'no_monthly_or_yearly_fees' => 'لا توجد رسوم شهرية أو سنوية.',
         'customer_support' => '24/7 دعم العملاء',
@@ -101,7 +101,7 @@ return [
         'facebook' => 'موقع التواصل الاجتماعي الفيسبوك',
         'linkedin' => 'ينكدين',
         'github' => 'جيثب',
-        'made_with_by_infyOm_technologies' => 'مصنوع بواسطة Self Care',
+        'made_with_by_selfcare' => 'مصنوع بواسطة Self Care',
         'we_are_group' => 'نحن مجموعة من المهووسين المبدعين الذين نصنع أشياء رائعة للويب والجوال. نحن فقط نحب
                  المساهمة في تقنيات المصادر المفتوحة. نحاول دائمًا بناء شيء يساعد المطورين على ذلك
                  وفر وقتهم. حتى يتمكنوا من قضاء المزيد من الوقت مع أصدقائهم وعائلاتهم.',

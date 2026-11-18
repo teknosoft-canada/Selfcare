@@ -14,14 +14,12 @@
     <title>404 Not Found | {{ config('app.name') }}</title>
 
     <!-- Bootstrap 4.1.1 -->
-    <link href="{{ asset('assets/css/bootstrap.min.css') }}" rel="stylesheet" type="text/css"/>
 
     <link rel="stylesheet" href="{{ asset('web/css/style.css') }}">
     <link rel="stylesheet" href="{{ asset('web/css/responsive.css') }}">
     <link rel="stylesheet" href="{{ asset('css/selfcare-brand.css') }}">
 
     <!-- Ionicons -->
-    <link rel="stylesheet" href="{{ asset('assets/css/@fortawesome/fontawesome-free/css/all.min.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/simple-line-icons/css/simple-line-icons.css') }}">
 </head>
 <body>
@@ -38,9 +36,7 @@
         </div>
     </div>
 </div>
-<script src="{{ asset('assets/js/jquery.min.js') }}"></script>
 <script src="{{ asset('assets/js/popper.min.js') }}"></script>
-<script src="{{ asset('assets/js/bootstrap.min.js') }}"></script>
 <script src="{{ asset('web/js/scripts.js') }}"></script>
 </body>
 </html>

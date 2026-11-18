@@ -104,7 +104,7 @@
                             ?>
                             <div class="image-picker">
                                 <div class="image previewImage" id="previewImage"
-                                    style="background-image: url('{{ $settings['app_logo'] ? asset($settings['app_logo']) : asset('hms-saas-logo.png') }}')">
+                                    style="background-image: url('{{ $settings['app_logo'] ? asset($settings['app_logo']) : asset('selfcare-logo.png') }}')">
                                 </div>
                                 <span class="picker-edit rounded-circle text-gray-500 fs-small" data-bs-toggle="tooltip"
                                     data-placement="top" data-bs-original-title={{ __('messages.setting.change_logo') }}>
@@ -137,7 +137,7 @@
                             ?>
                             <div class="image-picker">
                                 <div class="image previewImage" id="previewImage"
-                                    style="background-image: url('{{ isset($settings['favicon']) ? asset($settings['favicon']) : asset('web/img/hms-saas-favicon.ico') }}')">
+                                    style="background-image: url('{{ isset($settings['favicon']) ? asset($settings['favicon']) : asset('web/img/selfcare-favicon.ico') }}')">
                                 </div>
                                 <span class="picker-edit rounded-circle text-gray-500 fs-small" data-bs-toggle="tooltip"
                                     data-placement="top"

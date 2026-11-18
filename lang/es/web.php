@@ -20,7 +20,7 @@ return [
     'start_using_Self Care_now' => 'Empiece a usar Self Care ahora.',
     'get_started' => 'Empezar',
     'welcome_to' => 'Bienvenido a',
-    'infyhms' => 'Self Care',
+    'selfcare' => 'Self Care',
     'manage_your_hospital_day_to_day_operations_digitally_with_ease_and_effort without' => 'Administre las operaciones del día a día de su Hospital digitalmente con facilidad y sin esfuerzo.',
     'buy_now' => 'Comprar ahora',
     'home' => 'Hogar',
@@ -69,7 +69,7 @@ return [
 
     //MISCELLANEOUS FACILITIES keys
     'miscellaneous_facilities' => [
-        'miscellaneous_facilities_of_infyhms' => 'DIVERSAS INSTALACIONES DE SELF CARE',
+        'miscellaneous_facilities_of_selfcare' => 'DIVERSAS INSTALACIONES DE SELF CARE',
         'host_in_your_Own_secure_server' => 'Alojar en su propio servidor seguro.',
         'no_monthly_or_yearly_fees' => 'Sin cuotas mensuales o anuales',
         'customer_support' => 'Soporte al cliente 24/7',
@@ -101,7 +101,7 @@ return [
         'facebook' => 'Facebook',
         'linkedin' => 'Linkedin',
         'github' => 'Github',
-        'made_with_by_infyOm_technologies' => 'Hecho con por Self Care',
+        'made_with_by_selfcare' => 'Hecho con por Self Care',
         'we_are_group' => 'Somos un grupo de nerds creativos que hacen cosas increíbles para Web y dispositivos móviles. Nos encanta
                  Contribuir a las tecnologías de código abierto. Siempre intentamos crear algo que ayude a los desarrolladores a
                  ahorre su tiempo. para que puedan pasar un poco más de tiempo con sus amigos y familiares. ',

@@ -17,7 +17,6 @@
             @include('death_reports.edit_modal')
         </div>
 @endsection
-{{--    <script src="{{ asset('assets/js/moment.min.js') }}"></script>--}}
 {{--let deathReportUrl = "{{ url('death-reports') }}"--}}
 {{--let deathReportCreateUrl = "{{ route('death-reports.store') }}"--}}
 {{--let patientUrl = "{{ url('patients') }}"--}}

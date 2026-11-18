@@ -46,7 +46,6 @@
     </div>
 @endsection
 @section('scripts')
-    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
     <script>
         let options = {
             'key': "{{ getSelectedPaymentGateway('razorpay_key') }}",
@@ -99,5 +98,4 @@
 {{-- //         let isEdit = false; --}}
 {{-- //         let isCreate = true; --}}
 {{--        let getBookingSlot = "{{ route('get.booking.slot') }}"; --}}
-{{--    <script src="{{ asset('backend/js/moment-round/moment-round.js') }}"></script> --}}
 {{--    <script src="{{mix('assets/js/appointments/create-edit.js')}}"></script> --}}

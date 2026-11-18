@@ -49,7 +49,6 @@
             @endif
             @if (Auth::user()->hasRole('Doctor'))
                 <div class="d-flex align-items-center">
-                    <a data-turbo="false" href="{{ route('appointments.excel') }}"
                         class="btn btn-primary">{{ __('messages.common.export_to_excel') }}</a>
                 </div>
             @endif
@@ -61,12 +60,10 @@
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                         <li>
-                            <a href="{{ route('appointments.create') }}" class="dropdown-item  px-5" data-turbo="false">
                                 {{ __('messages.appointment.new_appointment') }}
                             </a>
                         </li>
                         <li>
-                            <a href="{{ route('appointments.excel') }}" class="dropdown-item  px-5" data-turbo="false">
                                 {{ __('messages.common.export_to_excel') }}
                             </a>
                         </li>
